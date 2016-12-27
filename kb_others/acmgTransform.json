@@ -1,0 +1,857 @@
+{
+  "data": {
+    "Transformation": {
+      "value": "acmgTransform",
+      "properties": {
+        "Output": {
+          "value": "",
+          "properties": {
+            "Data": {
+              "value": "",
+              "properties": {
+                "Special Value Rules": {
+                  "items": [
+                    {
+                      "Special Value Rule": {
+                        "value": "PE2",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Pathogenic.Stand Alone.Functional Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "PE6",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Pathogenic.Stand Alone.Population Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "PE13",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Pathogenic.Stand Alone.De novo Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "PE23",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Pathogenic.Stand Alone.Segregation Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "PE31",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Pathogenic.Stand Alone.Other Database"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "PE37",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Pathogenic.Stand Alone.Computational And Predictive Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "PE45",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Pathogenic.Stand Alone.Other Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "PE52",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Pathogenic.Stand Alone.Allelic Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B1",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Strong.De novo Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B2",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Supporting.De novo Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "BE3",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Very Strong.Functional Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B4",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Very Strong.Population Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B5",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Very Strong.De novo Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B6",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Very Strong.Segregation Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B7",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Very Strong.Other Database"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B8",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Very Strong.Computational And Predictive Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B9",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Very Strong.Other Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B10",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Very Strong.Allelic Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B11",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Moderate.Functional Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B12",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Moderate.Population Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B13",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Moderate.De novo Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B14",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Moderate.Segregation Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B15",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Moderate.Other Database"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B16",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Moderate.Computational And Predictive Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B17",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Moderate.Other Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B18",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Moderate.Allelic Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B19",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Stand Alone.Functional Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B20",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Stand Alone.De novo Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B21",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Stand Alone.Segregation Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B22",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Stand Alone.Other Database"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B23",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Stand Alone.Computational And Predictive Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B24",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Stand Alone.Other Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Special Value Rule": {
+                        "value": "B25",
+                        "properties": {
+                          "Special": {
+                            "value": "invalid"
+                          },
+                          "Type": {
+                            "value": "partitioning",
+                            "properties": {
+                              "Partition Rule": {
+                                "value": "Benign.Stand Alone.Allelic Data"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "value": ""
+                },
+                "Aggregation": {
+                  "value": "",
+                  "properties": {
+                    "Operation": {
+                      "value": "count"
+                    },
+                    "Subject": {
+                      "value": "<>.Subject.Evidence Tags.[].Evidence Tag.Tag.Status.{\"On\"}",
+                      "properties": {
+                        "Type": {
+                          "value": "int"
+                        }
+                      }
+                    }
+                  }
+                },
+                "Partitioning Rules": {
+                  "items": [
+                    {
+                      "Partitioning Rule": {
+                        "value": "<>.Subject.Evidence Tags.[].Evidence Tag.Tag.Type",
+                        "properties": {
+                          "PropField": {
+                            "value": "value"
+                          },
+                          "Rank": {
+                            "value": 3
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Partitioning Rule": {
+                        "value": "<>.Subject.Evidence Tags.[].Evidence Tag.Tag.Pathogenicity",
+                        "properties": {
+                          "PropField": {
+                            "value": "value"
+                          },
+                          "Rank": {
+                            "value": 1
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Partitioning Rule": {
+                        "value": "<>.Subject.Evidence Tags.[].Evidence Tag.Tag.Strength",
+                        "properties": {
+                          "PropField": {
+                            "value": "value"
+                          },
+                          "Rank": {
+                            "value": 2
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "value": ""
+                },
+                "Structure": {
+                  "value": "nestedList"
+                }
+              }
+            },
+            "Contexts": {
+              "items": [
+                {
+                  "Context": {
+                    "value": "Phenotype",
+                    "properties": {
+                      "Prop": {
+                        "value": "<>.Subject.Phenotype",
+                        "properties": {
+                          "PropField": {
+                            "value": "value"
+                          },
+                          "Rank": {
+                            "value": 1
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "Context": {
+                    "value": "Mode of Inheritance",
+                    "properties": {
+                      "Prop": {
+                        "value": "<>.Subject.Mode of inheritance",
+                        "properties": {
+                          "PropField": {
+                            "value": "value"
+                          },
+                          "Rank": {
+                            "value": 2
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "value": ""
+            },
+            "Special Data": {
+              "value": "",
+              "properties": {
+                "Metadata Match Subject": {
+                  "items": [
+                    {
+                      "Context": {
+                        "value": "Tags",
+                        "properties": {
+                          "Prop": {
+                            "value": "<>.Subject.Evidence Tags.[].Evidence Tag.Tag",
+                            "properties": {
+                              "PropField": {
+                                "value": "value"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Context": {
+                        "value": "Stat",
+                        "properties": {
+                          "Prop": {
+                            "value": "<>.Subject.Evidence Tags.[].Evidence Tag.Tag.Status",
+                            "properties": {
+                              "PropField": {
+                                "value": "value"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Context": {
+                        "value": "Evidence Tags",
+                        "properties": {
+                          "Prop": {
+                            "value": "<>.Subject.Evidence Tags.[].Evidence Tag",
+                            "properties": {
+                              "PropField": {
+                                "value": "value"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Context": {
+                        "value": "Summary",
+                        "properties": {
+                          "Prop": {
+                            "value": "<>.Subject.Evidence Tags.[].Evidence Tag.Tag.Summary",
+                            "properties": {
+                              "PropField": {
+                                "value": "value"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "value": ""
+                },
+                "Metadata Subject": {
+                  "value": true
+                },
+                "Required Partitions": {
+                  "items": [
+                    {
+                      "Partition": {
+                        "value": "P1",
+                        "properties": {
+                          "Rank": {
+                            "value": 1
+                          },
+                          "Partition Names": {
+                            "value": "Benign,Pathogenic"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Partition": {
+                        "value": "P2",
+                        "properties": {
+                          "Rank": {
+                            "value": 2
+                          },
+                          "Partition Names": {
+                            "value": "Supporting,Moderate,Strong,Very Strong,Stand Alone"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "Partition": {
+                        "value": "P3",
+                        "properties": {
+                          "Rank": {
+                            "value": 3
+                          },
+                          "Partition Names": {
+                            "value": "Population Data,Computational And Predictive Data,Functional Data,Segregation Data,De novo Data,Allelic Data,Other Database,Other Data"
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "value": ""
+                }
+              }
+            }
+          }
+        },
+        "Description": {
+          "value": "This is a transformation document for clinGenGrid"
+        },
+        "Scope": {
+          "value": "doc"
+        },
+        "Type": {
+          "value": "partitioning",
+          "properties": {
+            "Subject": {
+              "value": "prop"
+            }
+          }
+        }
+      }
+    }
+  },
+  "status": {
+    "msg": "OK",
+    "statusCode": "OK"
+  }
+}

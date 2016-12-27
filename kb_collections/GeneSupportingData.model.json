@@ -1,0 +1,47 @@
+{
+  "properties": [
+    {
+      "properties": [
+        {
+          "description": "counter",
+          "domain": "numItems",
+          "name": "Sources",
+          "category": true,
+          "items": [
+            {
+              "properties": [
+                {
+                  "domain": "url",
+                  "name": "url",
+                  "required": true
+                },
+                {
+                  "domain": "string",
+                  "name": "Summary"
+                }
+              ],
+              "domain": "string",
+              "name": "Source",
+              "required": true,
+              "index": true,
+              "identifier": true,
+              "unique": true
+            }
+          ]
+        }
+      ],
+      "description": "url of gene",
+      "domain": "url",
+      "name": "Subject",
+      "category": true,
+      "index": true
+    }
+  ],
+  "description": "identifier of doc",
+  "domain": "autoID(GSUP, increment[6],,)",
+  "name": "GeneSupportingData",
+  "required": true,
+  "index": true,
+  "identifier": true,
+  "unique": true
+}

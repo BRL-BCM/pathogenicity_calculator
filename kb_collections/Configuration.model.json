@@ -1,0 +1,84 @@
+{
+  "domain": "string",
+  "required": true,
+  "properties": [
+    {
+      "domain": "string",
+      "name": "Email",
+      "description": "Email to be displayed in case of warning or error messages"
+    },
+    {
+      "domain": "url",
+      "required": true,
+      "properties": [
+        {
+          "domain": "url",
+          "required": true,
+          "name": "redmineProject",
+          "description": "GenboreeKB UI link"
+        }
+      ],
+      "name": "CanonicalAllele",
+      "description": "Link to canonical allele collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}"
+    },
+    {
+      "domain": "url",
+      "required": true,
+      "name": "EvidenceSource",
+      "description": "Link to evidence source collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}. Information about guidelines, tags, transformation and project IDs are fetched from this collection"
+    },
+    {
+      "domain": "url",
+      "required": true,
+      "name": "ConclusionCache",
+      "description": "Link to conclusionCache collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}."
+    },
+    {
+      "domain": "url",
+      "required": true,
+      "name": "CA2EvidenceCache",
+      "description": "Link to the EvidenceCache"
+    },
+    {
+      "domain": "url",
+      "required": true,
+      "name": "Gene",
+      "description": "Link to Gene collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}."
+    },
+    {
+      "domain": "url",
+      "required": true,
+      "name": "ReferenceSequence",
+      "description": "Link to ReferenceSequence collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}."
+    },
+    {
+      "domain": "url",
+      "required": true,
+      "name": "CASourceLinks",
+      "description": "Link to the collection where the source links for the canonical allele are present. It is this information that is used in the top most panel of the calculator."
+    },
+    {
+      "domain": "url",
+      "required": true,
+      "name": "GeneSourceLinks",
+      "description": "Link to the collection where the source links for the gene are present. It is this information that is used in the top most panel of the calculator."
+    },
+    {
+      "domain": "url",
+      "required": true,
+      "name": "ContextualAllele",
+      "description": "Link to the Contextual Collection."
+    },
+    {
+      "domain": "url",
+      "required": true,
+      "name": "RegistryAddress",
+      "description": "Link to the Registry Address."
+    }
+  ],
+  "unique": true,
+  "identifier": true,
+  "index": true,
+  "name": "Configuration",
+  "description": "Identifier for this document"
+}

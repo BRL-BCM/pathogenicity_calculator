@@ -1,0 +1,3078 @@
+{
+  "GuideLines_V0_2": {
+    "properties": {
+      "MetaRules": {
+        "items": [
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Given set of evidence are not sufficient to make any assertions."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Insufficient Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 0
+                }
+              },
+              "value": "MetaRule1"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "As the rules only suggest one assertion that is Pathogenic, the final assertion is Pathogenic"
+                },
+                "Inference": {
+                  "value": "Pathogenic"
+                },
+                "NumberOfAssertions": {
+                  "value": 1
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule2"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "As the rules only suggest one assertion that is Benign, the final assertion is Benign"
+                },
+                "Inference": {
+                  "value": "Benign"
+                },
+                "NumberOfAssertions": {
+                  "value": 1
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule3"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "As the rules only suggest one assertion that is Likely Pathogenic, the final assertion is Likely Pathogenic"
+                },
+                "Inference": {
+                  "value": "Likely Pathogenic"
+                },
+                "NumberOfAssertions": {
+                  "value": 1
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule4"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "As the rules only suggest one assertion that is Likely Pathogenic, the final assertion is Likely Benign"
+                },
+                "Inference": {
+                  "value": "Likely Benign"
+                },
+                "NumberOfAssertions": {
+                  "value": 1
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule5"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "As the rules only suggest one assertion that is Uncertain Significance - Insufficient Evidence, the final assertion is Uncertain Significance - Insufficient Evidence"
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 1
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule6"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Two assertions: Pathogenic and Likely Pathogenic were made. In such case the final call is the highest strength call, hence the allele is Pathogenic"
+                },
+                "Inference": {
+                  "value": "Pathogenic"
+                },
+                "NumberOfAssertions": {
+                  "value": 2
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule7"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Two assertions: Benign and Likely Benign were made. In such case the final call is the highest strength call, hence the allele is Benign"
+                },
+                "Inference": {
+                  "value": "Benign"
+                },
+                "NumberOfAssertions": {
+                  "value": 2
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule8"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Three assertions: Pathogenic, Likely Pathogenic and Uncertain Significance - Conflicting Evidence were made. In such cases the final call is Uncertain Significance - Conflicting Evidence."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule9"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Three assertions: Benign, Likely Benign and Uncertain Significance - Conflicting Evidence were made. In such cases the final call is Uncertain Significance - Conflicting Evidence."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule10"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Two assertions: Pathogenic and Uncertain Significance - Conflicting Evidence were made. The final call in this case is Uncertain Significance - Conflicting Evidence."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 2
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule11"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Two assertions: Likely Pathogenic and Uncertain Significance - Conflicting Evidence were made. The final call in this case is Uncertain Significance - Conflicting Evidence."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 2
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule12"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Two assertions: Benign and Uncertain Significance - Conflicting Evidence were made. The final call in this case is Uncertain Significance - Conflicting Evidence."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 2
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule13"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Two assertions: Likely Benign and Uncertain Significance - Conflicting Evidence were made. The final call in this case is Uncertain Significance - Conflicting Evidence."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 2
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule14"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Three assertions: Likely Pathogenic, Likely Benign and Uncertain Significance - Conflicting Evidence were made. In such cases the final call is Uncertain Significance - Conflicting Evidence."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule15"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Three assertions: Likely Pathogenic, Benign and Uncertain Significance - Conflicting Evidence were made. In such cases the final call is Uncertain Significance - Conflicting Evidence."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule16"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Three assertions: Pathogenic, Likely Benign and Uncertain Significance - Conflicting Evidence were made. In such cases the final call is Uncertain Significance - Conflicting Evidence."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule17"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Three assertions: Pathogenic, Benign and Uncertain Significance - Conflicting Evidence were made. In such cases the final call is Uncertain Significance - Conflicting Evidence."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule18"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Four assertions: Likely Pathogenic, Pathogenic, Likely Benign and Uncertain Significance - Conflicting Evidence were made. In such cases the final call is Uncertain Significance - Conflicting Evidence."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 4
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule19"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Four assertions: Likely Pathogenic, Pathogenic, Benign and Uncertain Significance - Conflicting Evidence were made. In such cases the final call is Uncertain Significance - Conflicting Evidence."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 4
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule20"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Four assertions: Likely Pathogenic, Likely Benign, Benign and Uncertain Significance - Conflicting Evidence were made. In such cases the final call is Uncertain Significance - Conflicting Evidence."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 4
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule21"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Four assertions: Pathogenic, Likely Benign, Benign and Uncertain Significance - Conflicting Evidence were made. In such cases the final call is Uncertain Significance - Conflicting Evidence."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 4
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule22"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": "Five Assertions: Benign, Pathogenic, Likely Pathogenic, Likely Benign and Uncertain Significance - Conflicting Evidence were made. The final call in such case is Uncertain Significance - Conflicting Evidence."
+                },
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "NumberOfAssertions": {
+                  "value": 5
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule23"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 1
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule24"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 2
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule25"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 2
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule26"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 2
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule27"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 2
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule28"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 2
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule29"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule30"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule31"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule32"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule33"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule34"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule35"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule36"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule37"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule38"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 3
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule39"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 4
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule41"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 4
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule42"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 4
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule43"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 4
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule44"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 4
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule45"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 4
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule46"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 4
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule47"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 5
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule48"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 5
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule49"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 5
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule50"
+            }
+          },
+          {
+            "MetaRule": {
+              "properties": {
+                "Explanation": {
+                  "value": ""
+                },
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "NumberOfAssertions": {
+                  "value": 6
+                },
+                "UniqueAssertions": {
+                  "items": [
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Benign"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Likely Pathogenic"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Uncertain Significance - Conflicting Evidence"
+                      }
+                    },
+                    {
+                      "UniqueAssertion": {
+                        "value": "Benign - Stand Alone"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "MetaRule51"
+            }
+          }
+        ],
+        "value": null
+      },
+      "Rules": {
+        "items": [
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Very Strong"
+                          }
+                        },
+                        "value": "Rule1, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Strong"
+                          }
+                        },
+                        "value": "Rule1, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule1"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Very Strong"
+                          }
+                        },
+                        "value": "Rule2, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=2"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Moderate"
+                          }
+                        },
+                        "value": "Rule2, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule2"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Very Strong"
+                          }
+                        },
+                        "value": "Rule3, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Moderate"
+                          }
+                        },
+                        "value": "Rule3, Condition2"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Supporting"
+                          }
+                        },
+                        "value": "Rule3, Condition3"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule3"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Very Strong"
+                          }
+                        },
+                        "value": "Rule4, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=2"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Supporting"
+                          }
+                        },
+                        "value": "Rule4, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule4"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=2"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Strong"
+                          }
+                        },
+                        "value": "Rule5, Condition1"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule5"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Strong"
+                          }
+                        },
+                        "value": "Rule6, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=3"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Moderate"
+                          }
+                        },
+                        "value": "Rule6, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule6"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Strong"
+                          }
+                        },
+                        "value": "Rule7, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==2"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Moderate"
+                          }
+                        },
+                        "value": "Rule7, Condition2"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=2"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Supporting"
+                          }
+                        },
+                        "value": "Rule7, Condition3"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule7"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Strong"
+                          }
+                        },
+                        "value": "Rule8, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Moderate"
+                          }
+                        },
+                        "value": "Rule8, Condition2"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=4"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Supporting"
+                          }
+                        },
+                        "value": "Rule8, Condition3"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule8"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Likely Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Very Strong"
+                          }
+                        },
+                        "value": "Rule9, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Moderate"
+                          }
+                        },
+                        "value": "Rule9, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule9"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Likely Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Very Strong"
+                          }
+                        },
+                        "value": "Rule10, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=2"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Supporting"
+                          }
+                        },
+                        "value": "Rule10, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule10"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Likely Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Strong"
+                          }
+                        },
+                        "value": "Rule11, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Moderate"
+                          }
+                        },
+                        "value": "Rule11, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule11"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Likely Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Strong"
+                          }
+                        },
+                        "value": "Rule12, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=2"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Supporting"
+                          }
+                        },
+                        "value": "Rule12, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule12"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Likely Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=3"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Moderate"
+                          }
+                        },
+                        "value": "Rule13, Condition1"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule13"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Likely Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==2"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Moderate"
+                          }
+                        },
+                        "value": "Rule14, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=2"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Supporting"
+                          }
+                        },
+                        "value": "Rule14, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule14"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Likely Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Moderate"
+                          }
+                        },
+                        "value": "Rule15, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=4"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Supporting"
+                          }
+                        },
+                        "value": "Rule15, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule15"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Benign"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=2"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Strong"
+                          }
+                        },
+                        "value": "Rule16, Condition1"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule16"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Benign - Stand Alone"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Stand Alone"
+                          }
+                        },
+                        "value": "Rule17, Condition1"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule17"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Likely Benign"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Strong"
+                          }
+                        },
+                        "value": "Rule18, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Supporting"
+                          }
+                        },
+                        "value": "Rule18, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule18"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Likely Benign"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=2"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Supporting"
+                          }
+                        },
+                        "value": "Rule19, Condition1"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule19"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Likely Pathogenic"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Strong"
+                          }
+                        },
+                        "value": "Rule20, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": "==2"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Moderate"
+                          }
+                        },
+                        "value": "Rule20, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule20"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Strong"
+                          }
+                        },
+                        "value": "Rule21, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Strong"
+                          }
+                        },
+                        "value": "Rule21, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule21"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Strong"
+                          }
+                        },
+                        "value": "Rule22, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Moderate"
+                          }
+                        },
+                        "value": "Rule22, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule22"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Strong"
+                          }
+                        },
+                        "value": "Rule23, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Very Strong"
+                          }
+                        },
+                        "value": "Rule23, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule23"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Strong"
+                          }
+                        },
+                        "value": "Rule24, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Supporting"
+                          }
+                        },
+                        "value": "Rule24, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule24"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Stand Alone"
+                          }
+                        },
+                        "value": "Rule25, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Very Strong"
+                          }
+                        },
+                        "value": "Rule25, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule25"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Stand Alone"
+                          }
+                        },
+                        "value": "Rule26, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Strong"
+                          }
+                        },
+                        "value": "Rule26, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule26"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Stand Alone"
+                          }
+                        },
+                        "value": "Rule27, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Moderate"
+                          }
+                        },
+                        "value": "Rule27, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule27"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Stand Alone"
+                          }
+                        },
+                        "value": "Rule28, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Supporting"
+                          }
+                        },
+                        "value": "Rule28, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule28"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Supporting"
+                          }
+                        },
+                        "value": "Rule29, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Very Strong"
+                          }
+                        },
+                        "value": "Rule29, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule29"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Supporting"
+                          }
+                        },
+                        "value": "Rule30, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Strong"
+                          }
+                        },
+                        "value": "Rule30, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule30"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Supporting"
+                          }
+                        },
+                        "value": "Rule31, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Supporting"
+                          }
+                        },
+                        "value": "Rule31, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule31"
+            }
+          },
+          {
+            "Rule": {
+              "properties": {
+                "Inference": {
+                  "value": "Uncertain Significance - Conflicting Evidence"
+                },
+                "Conditions": {
+                  "items": [
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Benign.Supporting"
+                          }
+                        },
+                        "value": "Rule32, Condition1"
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "properties": {
+                          "Condition": {
+                            "value": ">=1"
+                          },
+                          "PartitionPath": {
+                            "value": "Pathogenic.Moderate"
+                          }
+                        },
+                        "value": "Rule32, Condition2"
+                      }
+                    }
+                  ],
+                  "value": null
+                }
+              },
+              "value": "Rule32"
+            }
+          }
+        ],
+        "value": null
+      }
+    },
+    "value": "ACMG2015-Guidelines"
+  }
+}

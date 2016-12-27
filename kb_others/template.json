@@ -1,0 +1,39 @@
+{
+  "data": {
+    "id": {
+      "value": "newEviTempEvidence1Evidence",
+      "properties": {
+        "coll": {
+          "value": "Evidence"
+        },
+        "root": {
+          "value": "Allele evidence"
+        },
+        "template": {
+          "value": {
+            "properties": {
+              "Subject": {
+                "value": "http://clingenkb.org/canonical_allele/CA046823540661565",
+                "properties": {
+                  "Phenotype": {
+                    "value": ""
+                  },
+                  "Mode of inheritance": {
+                    "value": "Unknown"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "internal": {
+          "value": false
+        }
+      }
+    }
+  },
+  "status": {
+    "msg": "OK",
+    "statusCode": "OK"
+  }
+}

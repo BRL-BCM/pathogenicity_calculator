@@ -1,0 +1,100 @@
+{
+  "required": true,
+  "Subject Relation to Object": "isSelf",
+  "identifier": true,
+  "name": "AllowedTags",
+  "unique": true,
+  "properties": [
+    {
+      "name": "Partitions",
+      "category": true,
+      "fixed": true,
+      "items": [
+        {
+          "required": true,
+          "identifier": true,
+          "name": "Partition",
+          "unique": true,
+          "properties": [
+            {
+              "required": true,
+              "name": "Level1",
+              "domain": "enum(CHOOSE_ONE, Pathogenic, Benign)"
+            },
+            {
+              "required": true,
+              "name": "Level2",
+              "domain": "enum(CHOOSE_ONE, Strong, Very Strong, Moderate, Supporting, Stand Alone)"
+            },
+            {
+              "required": true,
+              "name": "Level3",
+              "domain": "enum(CHOOSE_ONE, Computational And Predictive Data, Functional Data, Population Data, Allelic Data, De novo Data, Segregation Data, Other Data, Other Database)"
+            },
+            {
+              "name": "Tags",
+              "items": [
+                {
+                  "required": true,
+                  "identifier": true,
+                  "name": "Tag",
+                  "unique": true,
+                  "properties": [
+                    {
+                      "name": "Text",
+                      "domain": "string"
+                    }
+                  ],
+                  "index": true,
+                  "domain": "string"
+                }
+              ],
+              "domain": "string"
+            }
+          ],
+          "index": true,
+          "domain": "string"
+        }
+      ],
+      "domain": "[valueless]"
+    },
+    {
+      "name": "Exclusivities",
+      "items": [
+        {
+          "required": true,
+          "identifier": true,
+          "name": "Exclusivity",
+          "unique": true,
+          "properties": [
+            {
+              "name": "Problem Type",
+              "default": "Redundant Tags",
+              "domain": "enum(Redundant Tags, Strength Adjusted)"
+            },
+            {
+              "name": "Problem Action",
+              "default": "Warning",
+              "domain": "enum(Warning, Strictly Prohibited)"
+            },
+            {
+              "required": true,
+              "name": "Patterns",
+              "domain": "string"
+            },
+            {
+              "name": "Description",
+              "domain": "string"
+            }
+          ],
+          "index": true,
+          "domain": "autoID(AC, increment[3],,)"
+        }
+      ],
+      "domain": "numItems"
+    }
+  ],
+  "Object Type": "pcalc:Allowed Tags",
+  "domain": "string",
+  "Node Keyword": "@id"
+}

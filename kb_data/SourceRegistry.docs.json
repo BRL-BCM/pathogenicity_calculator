@@ -1,0 +1,49 @@
+{
+  "SourceRegistry": {
+    "value": "user_registry",
+    "properties": {
+      "EvidenceSources": {
+        "value": 1,
+        "items": [
+          {
+            "EvidenceSource": {
+              "value": "__USERNAME__",
+              "properties": {
+                "Evidence": {
+                  "value": "http://localhost/REST/v1/grp/__USERNAME__/kb/__USERNAME__/coll/Evidence"
+                },
+                "Tags": {
+                  "value": "http://localhost/REST/v1/grp/pcalc_resources/kb/pcalc_resources/coll/AllowedTags/doc/ACMG2015-Caps"
+                },
+                "Transform": {
+                  "value": "http://localhost/REST/v1/grp/pcalc_resources/kb/pcalc_resources/trRulesDoc/acmgTransform"
+                },
+                "Questionnaire": {
+                  "value": "http://localhost/REST/v1/grp/__USERNAME__/kb/__USERNAME__/coll/Evidence/quest/newEviEvidence1Evidence"
+                },
+                "Guidelines": {
+                  "value": 1,
+                  "items": [
+                    {
+                      "Guideline": {
+                        "value": "http://localhost/REST/v1/grp/pcalc_resources/kb/pcalc_resources/coll/GuidelineRulesMetaRules/doc/ACMG2015-Guidelines",
+                        "properties": {
+                          "type": {
+                            "value": "ACMG"
+                          },
+                          "displayName": {
+                            "value": "__USERNAME__"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

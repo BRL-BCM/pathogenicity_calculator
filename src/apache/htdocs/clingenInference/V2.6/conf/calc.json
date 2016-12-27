@@ -1,0 +1,11 @@
+{
+  "alleleRegAddress" : "http://reg.genome.network",
+  "adminEmail" : "bcm.clingen@gmail.com",
+  "userConfPath" : "/REST/v1/grp/pcalc_resources/kb/pcalc_resources/coll/Configuration/doc",
+  "headerPath" : "includes/header.incl",
+  "footerPath" : "includes/footer.incl",
+  "alleleRptDownloadEnabled" : false,
+  "alleleRptModelFile" : "/usr/local/brl/local/apache/htdocs/clingenInference/V2.5/alleleRpt.model.txt",
+  "alleleRptTemplatesDir" : "/usr/local/brl/local/apache/htdocs/clingenInference/V2.5/templates",
+  "alleleRptAssetBaseDir" : "/usr/local/brl/local/apache/htdocs/clingenInference/V2.5" 
+}

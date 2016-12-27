@@ -1,0 +1,2615 @@
+{
+    "AllowedTags": {
+      "value": "ACMG2015-Caps",
+      "properties": {
+      "Exclusivities": {
+        "value": 39,
+        "items": [
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PVS1.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PS1.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PS2.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PS3.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PS4.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PM1.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PM2.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PM3.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PM4.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PM5.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PM6.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PP1.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PP2.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PP3.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PP4.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PP5.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "BP1.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "BP2.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "BP3.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "BP4.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "BP5.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "BP6.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "BP7.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "BS1.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "BS2.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "BS3.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "BS4.*"
+                },
+                "Problem Type": {
+                  "value": "Strength Adjusted"
+                },
+                "Problem Action": {
+                  "value": "Strictly Prohibited"
+                },
+                "Description": {
+                  "value": "Identical evidence tags with different strength must not be selected."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PVS1.*,PM5.*"
+                },
+                "Problem Type": {
+                  "value": "Redundant Tags"
+                },
+                "Problem Action": {
+                  "value": "Warning"
+                },
+                "Description": {
+                  "value": "If a variant is a predicted null variant in a gene where LOF is a known mechanism of disease (PVS1) , adding PM5 (Novel missense change at an amino acid residue where a different pathogenic missense change has been seen before) would not make sense"
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PVS1.*,PM4.*"
+                },
+                "Problem Type": {
+                  "value": "Redundant Tags"
+                },
+                "Problem Action": {
+                  "value": "Warning"
+                },
+                "Description": {
+                  "value": "If a variant is a predicted null variant in a gene where LOF is a known mechanism of disease (PVS1) , adding PM4 (Protein length changing variant) will result in the redundant tags."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PVS1.*,PS1.*"
+                },
+                "Problem Type": {
+                  "value": "Redundant Tags"
+                },
+                "Problem Action": {
+                  "value": "Warning"
+                },
+                "Description": {
+                  "value": "If a variant is a predicted null variant in a gene where LOF is a known mechanism of disease (PVS1) , adding PS1 (Same amino acid change as an established pathogenic variant)  will result in the redundant tags"
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PVS1.*,BP1.*"
+                },
+                "Problem Type": {
+                  "value": "Redundant Tags"
+                },
+                "Problem Action": {
+                  "value": "Warning"
+                },
+                "Description": {
+                  "value": "If a variant is a predicted null variant in a gene where LOF is a known mechanism of disease (PVS1), adding BP1 (Missense when only truncating cause disease) will be contradicting."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PVS1.*,BP7.*"
+                },
+                "Problem Type": {
+                  "value": "Redundant Tags"
+                },
+                "Problem Action": {
+                  "value": "Warning"
+                },
+                "Description": {
+                  "value": "If a variant is a predicted null variant in a gene where LOF is a known mechanism of disease (PVS1), adding BP7 (Silent variant with non predicted splice impact) is contradicting"
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PVS1.*,BP3.*"
+                },
+                "Problem Type": {
+                  "value": "Redundant Tags"
+                },
+                "Problem Action": {
+                  "value": "Warning"
+                },
+                "Description": {
+                  "value": "If a variant is a predicted null variant in a gene where LOF is a known mechanism of disease (PVS1), adding BP3 (In-frame indels in repeat w/out known function) is contradicting"
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PVS1.*,PP2.*"
+                },
+                "Problem Type": {
+                  "value": "Redundant Tags"
+                },
+                "Problem Action": {
+                  "value": "Warning"
+                },
+                "Description": {
+                  "value": "If a variant is a predicted null variant in a gene where LOF is a known mechanism of disease (PVS1), adding PP2 (Missense in gene with low rate of benign missense variants) will be contradictory evidence."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PM4.*,PS1.*"
+                },
+                "Problem Type": {
+                  "value": "Redundant Tags"
+                },
+                "Problem Action": {
+                  "value": "Warning"
+                },
+                "Description": {
+                  "value": "Length changing (PM4) and missense (PS1) variant will be contradictory."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PM4.*,PM5.*"
+                },
+                "Problem Type": {
+                  "value": "Redundant Tags"
+                },
+                "Problem Action": {
+                  "value": "Warning"
+                },
+                "Description": {
+                  "value": "Length changing (PM4) and missense (PM5) variant will be contradictory."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PM4.*,BP7.*"
+                },
+                "Problem Type": {
+                  "value": "Redundant Tags"
+                },
+                "Problem Action": {
+                  "value": "Warning"
+                },
+                "Description": {
+                  "value": "Length changing (PM4) and missense (BP7) variant will be contradictory."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PM4.*,PP2.*"
+                },
+                "Problem Type": {
+                  "value": "Redundant Tags"
+                },
+                "Problem Action": {
+                  "value": "Warning"
+                },
+                "Description": {
+                  "value": "Length changing (PM4) and missense (PP2) variant will be contradictory."
+                }
+              }
+            }
+          },
+          {
+            "Exclusivity": {
+              "value": "",
+              "properties": {
+                "Patterns": {
+                  "value": "PP3.*,BP4.*"
+                },
+                "Problem Type": {
+                  "value": "Redundant Tags"
+                },
+                "Problem Action": {
+                  "value": "Warning"
+                },
+                "Description": {
+                  "value": "Multiple lines of computational evidence will not suggest no impact (BP4) as well as deleterious effects (PP3)"
+                }
+              }
+            }
+          }
+        ]
+      },
+        "Partitions": {
+          "items": [
+            {
+              "Partition": {
+                "value": "par35",
+                "properties": {
+                  "Level1": {
+                    "value": "Benign"
+                  },
+                  "Level2": {
+                    "value": "Supporting"
+                  },
+                  "Level3": {
+                    "value": "Population Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "BS1-Supporting",
+                          "properties": {
+                            "Text": {
+                              "value": "BS1 downgraded in strength to supporting"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "BS2-Supporting",
+                          "properties": {
+                            "Text": {
+                              "value": "BS2 downgraded in strength to supporting"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par17",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Moderate"
+                  },
+                  "Level3": {
+                    "value": "Population Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PM2",
+                          "properties": {
+                            "Text": {
+                              "value": "Absent from controls (or at extremely low frequency if recessive) in Exome Sequencing Project, 1000 Genomes Project, or Exome Aggregation Consortium"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PS4-Moderate",
+                          "properties": {
+                            "Text": {
+                              "value": "PS4 downgraded in strength to Moderate"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par46",
+                "properties": {
+                  "Level1": {
+                    "value": "Benign"
+                  },
+                  "Level2": {
+                    "value": "Strong"
+                  },
+                  "Level3": {
+                    "value": "Computational And Predictive Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "BP1-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "BP1 upgraded in strength to strong"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "BP3-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "BP3 upgraded in strength to strong"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "BP4-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "BP4 upgraded in strength to strong"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "BP7-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "BP7 upgraded in strength to strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par3",
+                "properties": {
+                  "Level1": {
+                    "value": "Benign"
+                  },
+                  "Level2": {
+                    "value": "Strong"
+                  },
+                  "Level3": {
+                    "value": "Functional Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "BS3",
+                          "properties": {
+                            "Text": {
+                              "value": "Well-established in vitro or in vivo functional studies show no damaging effect on protein function or splicing"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par2",
+                "properties": {
+                  "Level1": {
+                    "value": "Benign"
+                  },
+                  "Level2": {
+                    "value": "Strong"
+                  },
+                  "Level3": {
+                    "value": "Segregation Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "BS4",
+                          "properties": {
+                            "Text": {
+                              "value": "Lack of segregation in affected members of a family"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par14",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Moderate"
+                  },
+                  "Level3": {
+                    "value": "De novo Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PM6",
+                          "properties": {
+                            "Text": {
+                              "value": "Assumed de novo, but without confirmation of paternity and maternity"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PS2-Moderate",
+                          "properties": {
+                            "Text": {
+                              "value": "PS2 downgraded in strength to Moderate"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par8",
+                "properties": {
+                  "Level1": {
+                    "value": "Benign"
+                  },
+                  "Level2": {
+                    "value": "Supporting"
+                  },
+                  "Level3": {
+                    "value": "Allelic Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "BP2",
+                          "properties": {
+                            "Text": {
+                              "value": "Observed in trans with a pathogenic variant for a fully penetrant dominant gene/disorder or observed in cis with a pathogenic variant in any inheritance pattern"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par6",
+                "properties": {
+                  "Level1": {
+                    "value": "Benign"
+                  },
+                  "Level2": {
+                    "value": "Supporting"
+                  },
+                  "Level3": {
+                    "value": "Other Database"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "BP6",
+                          "properties": {
+                            "Text": {
+                              "value": "Reputable source recently reports variant as benign, but the evidence is not available to the laboratory to perform an independent evaluation"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par1",
+                "properties": {
+                  "Level1": {
+                    "value": "Benign"
+                  },
+                  "Level2": {
+                    "value": "Stand Alone"
+                  },
+                  "Level3": {
+                    "value": "Population Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "BA1",
+                          "properties": {
+                            "Text": {
+                              "value": "Allele frequency is >5% in Exome Sequencing Project, 1000 Genomes Project, or Exome Aggregation Consortium"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par4",
+                "properties": {
+                  "Level1": {
+                    "value": "Benign"
+                  },
+                  "Level2": {
+                    "value": "Strong"
+                  },
+                  "Level3": {
+                    "value": "Population Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "BS1",
+                          "properties": {
+                            "Text": {
+                              "value": "Allele frequency is greater than expected for disorder"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "BS2",
+                          "properties": {
+                            "Text": {
+                              "value": "Observed in a healthy adult individual for a recessive (homozygous), dominant (heterozygous), or X-linked (hemizygous) disorder, with full penetrance expected at an early age"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par5",
+                "properties": {
+                  "Level1": {
+                    "value": "Benign"
+                  },
+                  "Level2": {
+                    "value": "Supporting"
+                  },
+                  "Level3": {
+                    "value": "Computational And Predictive Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "BP1",
+                          "properties": {
+                            "Text": {
+                              "value": "Missense in gene where only truncating cause disease"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "BP3",
+                          "properties": {
+                            "Text": {
+                              "value": "In-frame deletions/insertions in a repetitive region without a known function"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "BP4",
+                          "properties": {
+                            "Text": {
+                              "value": "Multiple lines of computational evidence suggest no impact on gene or gene product (conservation, evolutionary, splicing impact, etc.)"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "BP7",
+                          "properties": {
+                            "Text": {
+                              "value": "A synonymous (silent) variant for which splicing prediction algorithms predict no impact to the splice consensus sequence nor the creation of a new splice site AND the nucleotide is not highly conserved"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par7",
+                "properties": {
+                  "Level1": {
+                    "value": "Benign"
+                  },
+                  "Level2": {
+                    "value": "Supporting"
+                  },
+                  "Level3": {
+                    "value": "Other Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "BP5",
+                          "properties": {
+                            "Text": {
+                              "value": "Variant found in a case with an alternate molecular basis for disease"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par9",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Supporting"
+                  },
+                  "Level3": {
+                    "value": "Other Database"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PP5",
+                          "properties": {
+                            "Text": {
+                              "value": "Reputable source recently reports variant as pathogenic, but the evidence is not available to the laboratory to perform an independent evaluation"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par10",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Supporting"
+                  },
+                  "Level3": {
+                    "value": "Other Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PP4",
+                          "properties": {
+                            "Text": {
+                              "value": "Patients phenotype or family history is highly specific for a disease with a single genetic etiology"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par11",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Supporting"
+                  },
+                  "Level3": {
+                    "value": "Computational And Predictive Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PP3",
+                          "properties": {
+                            "Text": {
+                              "value": "Multiple lines of computational evidence support a deleterious effect on the gene or gene product"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PM4-Supporting",
+                          "properties": {
+                            "Text": {
+                              "value": "PM4 downgraded in strength to Supporting"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PM5-Supporting",
+                          "properties": {
+                            "Text": {
+                              "value": "PM5 downgraded in strength to Supporting"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PS1-Supporting",
+                          "properties": {
+                            "Text": {
+                              "value": "PS1 downgraded in strength to Supporting"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PVS1-Supporting",
+                          "properties": {
+                            "Text": {
+                              "value": "PVS1 downgraded in strength to Supporting"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par12",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Supporting"
+                  },
+                  "Level3": {
+                    "value": "Functional Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PP2",
+                          "properties": {
+                            "Text": {
+                              "value": "Missense variant in a gene that has a low rate of benign missense variation and in which missense variants are a common mechanism of disease"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PM1-Supporting",
+                          "properties": {
+                            "Text": {
+                              "value": "PM1 downgraded in strength to Supporting"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PS3-Supporting",
+                          "properties": {
+                            "Text": {
+                              "value": "PS3 downgraded in strength to Supporting"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par13",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Supporting"
+                  },
+                  "Level3": {
+                    "value": "Segregation Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PP1",
+                          "properties": {
+                            "Text": {
+                              "value": "Cosegregation with disease in multiple affected family members in a gene definitively known to cause the disease"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par15",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Moderate"
+                  },
+                  "Level3": {
+                    "value": "Computational And Predictive Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PM4",
+                          "properties": {
+                            "Text": {
+                              "value": "Protein length changes as a result of in-frame deletions/insertions in a nonrepeat region or stop-loss variants"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PM5",
+                          "properties": {
+                            "Text": {
+                              "value": "Novel missense change at an amino acid residue where a different missense change determined to be pathogenic has been seen before"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PP3-Moderate",
+                          "properties": {
+                            "Text": {
+                              "value": "PP3 upgraded in strength to Moderate"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PS1-Moderate",
+                          "properties": {
+                            "Text": {
+                              "value": "PS1 downgraded in strength to Moderate"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PVS1-Moderate",
+                          "properties": {
+                            "Text": {
+                              "value": "PVS1 downgraded in strength to Moderate"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par16",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Moderate"
+                  },
+                  "Level3": {
+                    "value": "Allelic Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PM3",
+                          "properties": {
+                            "Text": {
+                              "value": "For recessive disorders, detected in trans with a pathogenic variant"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par18",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Moderate"
+                  },
+                  "Level3": {
+                    "value": "Functional Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PM1",
+                          "properties": {
+                            "Text": {
+                              "value": "Located in a mutational hot spot and/or critical and well-established functional domain (e.g., active site of an enzyme) without benign variation"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PP2-Moderate",
+                          "properties": {
+                            "Text": {
+                              "value": "PP2 upgraded in strength to Moderate"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PS3-Moderate",
+                          "properties": {
+                            "Text": {
+                              "value": "PS3 downgraded in strength to Moderate"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par19",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Strong"
+                  },
+                  "Level3": {
+                    "value": "Population Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PS4",
+                          "properties": {
+                            "Text": {
+                              "value": "Prevalence in affecteds statistically increased over controls"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PM2-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PM2 upgraded in strength to Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par20",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Strong"
+                  },
+                  "Level3": {
+                    "value": "Functional Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PS3",
+                          "properties": {
+                            "Text": {
+                              "value": "Well-established functional studies show a deleterious effect"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PM1-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PM1 upgraded in strength to Strong"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PP2-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PP2 upgraded in strength to Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par21",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Strong"
+                  },
+                  "Level3": {
+                    "value": "De novo Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PS2",
+                          "properties": {
+                            "Text": {
+                              "value": "De novo (paternity and maternity confirmed)"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PM6-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PM6 upgraded in strength to Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par22",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Strong"
+                  },
+                  "Level3": {
+                    "value": "Computational And Predictive Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PS1",
+                          "properties": {
+                            "Text": {
+                              "value": "Same amino acid change as an established pathogenic variant"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PP3-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PP3 upgraded in strength to Strong"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PM4-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PM4 upgraded in strength to Strong"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PM5-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PM5 upgraded in strength to Strong"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PVS1-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PVS1 downgraded in strength to Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par23",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Very Strong"
+                  },
+                  "Level3": {
+                    "value": "Computational And Predictive Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PVS1",
+                          "properties": {
+                            "Text": {
+                              "value": "Predicted nullvariant in a gene where LOF is a known mechanism of disease"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PS1-Very Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PS1 upgraded in strength to Very Strong"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PM4-Very Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PM4 upgraded in strength to Very Strong"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PM5-Very Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PM5 upgraded in strength to Very Strong"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PP3-Very Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PP3 upgraded in strength to Very Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par24",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Moderate"
+                  },
+                  "Level3": {
+                    "value": "Segregation Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PP1-Moderate",
+                          "properties": {
+                            "Text": {
+                              "value": "PP1 upgraded in strength to Moderate"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par25",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Strong"
+                  },
+                  "Level3": {
+                    "value": "Segregation Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PP1-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PP1 upgraded in strength to Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par26",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Strong"
+                  },
+                  "Level3": {
+                    "value": "Other Database"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PP5-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PP5 upgraded in strength to Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par27",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Very Strong"
+                  },
+                  "Level3": {
+                    "value": "Functional Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PP2-Very Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PP2 upgraded in strength to Very Strong"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PM1-Very Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PM1 upgraded in strength to Very Strong"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PS3-Very Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PS3 upgraded in strength to Very Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par28",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Supporting"
+                  },
+                  "Level3": {
+                    "value": "Allelic Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PM3-Supporting",
+                          "properties": {
+                            "Text": {
+                              "value": "PM3 downgraded in strength to Supporting"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par29",
+                "properties": {
+                  "Level1": {
+                    "value": "Benign"
+                  },
+                  "Level2": {
+                    "value": "Supporting"
+                  },
+                  "Level3": {
+                    "value": "Functional Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "BS3-Supporting",
+                          "properties": {
+                            "Text": {
+                              "value": "BS3 downgraded in strength to supporting"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par30",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Very Strong"
+                  },
+                  "Level3": {
+                    "value": "Population Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PM2-Very Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PM2 upgraded in strength to Very Strong"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PS4-Very Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PS4 upgraded in strength to Very Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par31",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Very Strong"
+                  },
+                  "Level3": {
+                    "value": "Allelic Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PM3-Very Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PM3 upgraded in strength to Very Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par32",
+                "properties": {
+                  "Level1": {
+                    "value": "Benign"
+                  },
+                  "Level2": {
+                    "value": "Strong"
+                  },
+                  "Level3": {
+                    "value": "Other Database"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "BP6-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "BP6 upgraded in strength to strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par33",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Very Strong"
+                  },
+                  "Level3": {
+                    "value": "Other Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PP4-Very Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PP4 upgraded in strength to Very Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par34",
+                "properties": {
+                  "Level1": {
+                    "value": "Benign"
+                  },
+                  "Level2": {
+                    "value": "Strong"
+                  },
+                  "Level3": {
+                    "value": "Allelic Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "BP2-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "BP2 upgraded in strength to strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par36",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Very Strong"
+                  },
+                  "Level3": {
+                    "value": "De novo Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PM6-Very Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PM6 upgraded in strength to Very Strong"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PS2-Very Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PS2 upgraded in strength to Very Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par37",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Moderate"
+                  },
+                  "Level3": {
+                    "value": "Other Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PP4-Moderate",
+                          "properties": {
+                            "Text": {
+                              "value": "PP4 upgraded in strength to Moderate"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par38",
+                "properties": {
+                  "Level1": {
+                    "value": "Benign"
+                  },
+                  "Level2": {
+                    "value": "Supporting"
+                  },
+                  "Level3": {
+                    "value": "Segregation Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "BS4-Supporting",
+                          "properties": {
+                            "Text": {
+                              "value": "BS4 downgraded in strength to supporting"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par39",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Strong"
+                  },
+                  "Level3": {
+                    "value": "Other Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PP4-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PP4 upgraded in strength to Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par40",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Very Strong"
+                  },
+                  "Level3": {
+                    "value": "Segregation Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PP1-Very Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PP1 upgraded in strength to Very Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par41",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Very Strong"
+                  },
+                  "Level3": {
+                    "value": "Other Database"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PP5-Very Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PP5 upgraded in strength to Very Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par42",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Strong"
+                  },
+                  "Level3": {
+                    "value": "Allelic Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PM3-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "PM3 upgraded in strength to Strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par43",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Moderate"
+                  },
+                  "Level3": {
+                    "value": "Other Database"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PP5-Moderate",
+                          "properties": {
+                            "Text": {
+                              "value": "PP5 upgraded in strength to Moderate"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par44",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Supporting"
+                  },
+                  "Level3": {
+                    "value": "Population Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PM2-Supporting",
+                          "properties": {
+                            "Text": {
+                              "value": "PM2 downgraded in strength to Supporting"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PS4-Supporting",
+                          "properties": {
+                            "Text": {
+                              "value": "PS4 downgraded in strength to Supporting"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par45",
+                "properties": {
+                  "Level1": {
+                    "value": "Pathogenic"
+                  },
+                  "Level2": {
+                    "value": "Supporting"
+                  },
+                  "Level3": {
+                    "value": "De novo Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "PM6-Supporting",
+                          "properties": {
+                            "Text": {
+                              "value": "PM6 downgraded in strength to Supporting"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Tag": {
+                          "value": "PS2-Supporting",
+                          "properties": {
+                            "Text": {
+                              "value": "PS2 downgraded in strength to Supporting"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            },
+            {
+              "Partition": {
+                "value": "par47",
+                "properties": {
+                  "Level1": {
+                    "value": "Benign"
+                  },
+                  "Level2": {
+                    "value": "Strong"
+                  },
+                  "Level3": {
+                    "value": "Other Data"
+                  },
+                  "Tags": {
+                    "items": [
+                      {
+                        "Tag": {
+                          "value": "BP5-Strong",
+                          "properties": {
+                            "Text": {
+                              "value": "BP5 upgraded in strength to strong"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": ""
+                  }
+                }
+              }
+            }
+          ],
+          "value": null
+        }
+      }
+    }
+}

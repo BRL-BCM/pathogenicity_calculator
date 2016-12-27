@@ -1,0 +1,126 @@
+{
+  "domain": "regexp([A-Za-z0-9]+-Guidelines)",
+  "required": true,
+  "identifier": true,
+  "name": "GuideLines_V0_2",
+  "unique": true,
+  "description": "For example, ACMG OR McArthurLabGuideLines",
+  "properties": [
+    {
+      "fixed": true,
+      "domain": "[valueless]",
+      "name": "Rules",
+      "description": "Contains 1+ Rule items (rule record or rule sub-doc)",
+      "items": [
+        {
+          "domain": "string",
+          "required": true,
+          "identifier": true,
+          "name": "Rule",
+          "index": true,
+          "unique": true,
+          "category": true,
+          "description": "A rule item / sub-doc / record)",
+          "properties": [
+            {
+              "fixed": true,
+              "domain": "[valueless]",
+              "required": true,
+              "name": "Conditions",
+              "description": "The list of conditions for this rule. Each rule has 1+ conditions to test.",
+              "items": [
+                {
+                  "domain": "string",
+                  "required": true,
+                  "identifier": true,
+                  "name": "Condition",
+                  "index": true,
+                  "unique": true,
+                  "description": "A condition item / sub-doc / record",
+                  "properties": [
+                    {
+                      "domain": "string",
+                      "required": true,
+                      "name": "PartitionPath",
+                      "description": "What partition does this condition examine? Period-delimited path [of keys] in the partitioned \"data\" section of the partitioning transformation output."
+                    },
+                    {
+                      "domain": "regexp(^[>,=]=\\d)",
+                      "required": true,
+                      "name": "Condition",
+                      "description": "What is the conditional test applied to the value for PartitionPath? A string encoding a simple conditional test for the value in that partition"
+                    },
+                    {
+                      "domain": "enum(sum, count, value)",
+                      "name": "AggregationOperation",
+                      "description": "How to aggregate multiple values when coming up with the value for PartitionPath, if ParttionPath does not point to a \"leaf\" or final value, but rather to a partition that has multiple values (i.e. it indicates a whole \"column\" which thus can have multiple values, yes?)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "domain": "string",
+              "required": true,
+              "name": "Inference",
+              "description": "The inference if all the Conditions are met."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fixed": true,
+      "domain": "[valueless]",
+      "name": "MetaRules",
+      "category": true,
+      "items": [
+        {
+          "domain": "string",
+          "identifier": true,
+          "name": "MetaRule",
+          "index": true,
+          "unique": true,
+          "description": "enumerate the metarules",
+          "properties": [
+            {
+              "domain": "posInt",
+              "required": true,
+              "name": "NumberOfAssertions",
+              "description": "How many unique assertion for this final call"
+            },
+            {
+              "fixed": true,
+              "domain": "[valueless]",
+              "name": "UniqueAssertions",
+              "category": true,
+              "items": [
+                {
+                  "domain": "string",
+                  "required": true,
+                  "identifier": true,
+                  "name": "UniqueAssertion",
+                  "index": true,
+                  "unique": true,
+                  "description": "list assertions here"
+                }
+              ]
+            },
+            {
+              "domain": "string",
+              "required": true,
+              "name": "Inference",
+              "description": "what is the calls when assertion are matched with above values"
+            },
+            {
+              "domain": "string",
+              "required": true,
+              "name": "Explanation",
+              "description": "Text explaining meta rules"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

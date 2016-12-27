@@ -1,0 +1,280 @@
+<%#
+THIS FILE USES eruby %>
+<%
+# ---------------------------------------------------------------------------
+# SETUP CONVENIENT ENVIRONMENT
+# ---------------------------------------------------------------------------
+require "timeout"
+require "stringio"
+require "cgi"
+require "json"
+require "net/http"
+require "uri"
+require "brl/util/util"
+require "brl/genboree/genboreeUtil"
+require "brl/genboree/genboreeContext"
+require 'brl/genboree/rest/apiCaller'
+require 'brl/genboree/abstract/resources/user'
+BRL::Genboree::REST::ApiCaller.usageContext = :serverEmbedded
+
+def getConfs(confObj)
+  host = confObj['Host']['value'] rescue nil
+  group = confObj['Group']['value'] rescue nil
+  kb = confObj['KB']['value'] rescue nil
+  coll = confObj['Coll']['value'] rescue nil
+  doc = confObj['Doc']['value'] rescue nil
+  return host, group, kb, coll, doc
+end
+
+
+begin
+  cgi = CGI.new()
+  @req = Apache.request
+  @serverName = cgi.host
+  @serverName += ":#{cgi.server_port}" if(cgi.server_port != 80)
+  @context = BRL::Genboree::GenboreeContext.new(cgi, ENV)
+  self.extend(BRL::Genboree)
+  @errorMsg = ""
+  @errorState = false
+  #defaultGrp = "clingenInference", defaultKb = "Grid Prototype", defaultColl = "Gene-Variant Pairs"
+  apiHost = ENV["HTTP_HOST"]
+  inGbSession = true
+  inGbSession = false if(@context.cgi["genbSession"].nil? or @context.cgi["genbSession"].empty?)
+  unless(inGbSession)
+    @errorMsg = "No permission to access the page. Please <a href=\'http://#{apiHost}/java-bin/clingenInference.jsp\'>Sign in</a>."
+    @errorState = true
+  else
+    transfertoJs =  StringIO.new
+    subject = (@context.cgi['subject'] =~ /\S/) ? @context.cgi['subject'] : nil
+    conf = (@context.cgi['conf'] =~ /\S/) ? @context.cgi['conf'].strip() : nil
+    cHost = (@context.cgi['cHost'] =~ /\S/) ? @context.cgi['cHost'].strip() : nil
+    cGrp = (@context.cgi['cGrp'] =~ /\S/) ? @context.cgi['cGrp'].strip() : nil
+    cKB = (@context.cgi['cKB'] =~ /\S/) ? @context.cgi['cKB'].strip() : nil
+    cColl = (@context.cgi['cColl'] =~ /\S/) ? @context.cgi['cColl'].strip() : nil
+    evGrp = (@context.cgi['eviGrp'] =~ /\S/) ? @context.cgi['eviGrp'] : nil
+    evKb = (@context.cgi['eviKb'] =~ /\S/) ? @context.cgi['eviKb'] : nil
+    evColl = (@context.cgi['eviColl'] =~ /\S/) ? @context.cgi['eviColl'] : nil
+    gbProj = (@context.cgi['gbProjectId'] =~ /\S/) ? @context.cgi['gbProjectId'] : nil
+
+    # get the json with all the grid configurations
+    gridConfPath = @context.genbConf.gridConf
+    begin
+      dbrc = BRL::Genboree::GenboreeUtil.getSuperuserDbrc()
+      dbrc.user = dbrc.user.dup.untaint
+      dbrc.password = dbrc.password.dup.untaint
+      apiCaller = BRL::Genboree::REST::ApiCaller.new(apiHost, "#{gridConfPath}/BRL", dbrc.user, dbrc.password)
+      apiCaller.get()
+      if(apiCaller.succeeded?)
+        missing = []
+        defaultConfs = apiCaller.parseRespBody['data']['Configuration']['properties']
+        
+        # A. Allele configuration - currenlty uses just a single configuration from the default file
+        # Cannot be overridden - follows the concept of single and centralized Allele Registry
+        alleleHost, alleleGrp, alleleKB, alleleColl = getConfs(defaultConfs['Allele']['properties'])if(defaultConfs['Allele'])
+
+        # All the other following parameters can be overridden by using the query string conf.
+        # B. First get the default ones - Evidence
+        eviHost, eviGrp, eviKB, eviColl = getConfs(defaultConfs['Evidence']['properties'])if(defaultConfs['Evidence'])
+
+        # C. Guide Lines
+        guideHost, guideGrp, guideKB, guideColl, guideDoc = getConfs(defaultConfs['GuideLines']['properties']) if(defaultConfs['GuideLines'])
+
+        #D. Allowed Tags
+        tagHost, tagGrp, tagKB, tagColl, tagDoc = getConfs(defaultConfs['AllowedTags']['properties'])if(defaultConfs['AllowedTags'])
+
+        #E. Transformation
+        # Coll is nil here
+        trHost, trGrp, trKB, trColl, trDoc = getConfs(defaultConfs['Transformation']['properties']) if(defaultConfs['Transformation'])
+        
+        #F. Genboree KB UI
+        genboreeKBUrl = defaultConfs['KbUiLink']['value'] rescue nil
+        missing << 'genboreeKBUrl' unless(genboreeKBUrl)
+       
+        #G. Genboree KB Project
+        gbProject = defaultConfs['ProjectID']['value'] rescue nil
+
+        if(conf)
+          # allow overriding the configuration file location
+          if(cHost and cGrp and cKB and cColl)
+            gridConfPath = "http://#{cHost}/REST/v1/grp/#{cGrp}/kb/#{cKB}/coll/#{cColl}/doc"
+          end
+          apiCaller = BRL::Genboree::REST::ApiCaller.new(apiHost, "#{gridConfPath}/#{conf}", dbrc.user, dbrc.password)
+          apiCaller.get()
+          # Get the custom configuration and override the properties
+          if(apiCaller.succeeded?)
+            customConfs = apiCaller.parseRespBody['data']['Configuration']['properties']
+            alleleHostC, alleleGrpC, alleleKBC, alleleCollC = getConfs(customConfs['Allele']['properties']) if(customConfs['Allele'])
+            (alleleHost = alleleHostC and alleleGrp = alleleGrpC and alleleKB = alleleKBC and alleleColl = alleleCollC) if(alleleHostC)
+            missing << "Allele Registry configurations" unless(alleleHost)
+            eviHostC, eviGrpC, eviKBC, eviCollC = getConfs(customConfs['Evidence']['properties']) if(customConfs['Evidence'])
+            (eviHost = eviHostC and eviGrp = eviGrpC and eviKB = eviKBC and eviColl = eviCollC) if(eviHostC)
+            missing << "Evidence configurations" unless(eviHost)
+            guideHostC, guideGrpC, guideKBC, guideCollC, guideDocC = getConfs(customConfs['GuideLines']['properties']) if(customConfs['GuideLines'])
+            (guideHost = guideHostC and guideGrp = guideGrpC and guideKB = guideKBC and guideColl = guideCollC and guideDoc = guideDocC) if(guideHostC)
+            missing << "Guide lines settings" unless(guideHost)
+            tagHostC, tagGrpC, tagKBC, tagCollC, tagDocC = getConfs(customConfs['AllowedTags']['properties']) if(customConfs['AllowedTags'])
+            (tagHost = tagHostC and tagGrp = tagGrpC and tagKB = tagKBC and tagColl = tagCollC and tagDoc = tagDocC) if(tagHostC)
+            missing << "Allowed Tags settings" unless(tagHost)
+            
+            trHostC, trGrpC, trKBC, trCollC, trDocC = getConfs(customConfs['Transformation']['properties'])if(customConfs['Transformation'])
+            (trHost = trHostC and trGrp = trGrpC and trKB = trKBC and trDoc = trDocC) if(trHostC)
+            missing << "Transformation Document settings" unless(trDoc)
+            
+            gbProjectC = customConfs['ProjectID']['value'] rescue nil
+            gbProject = gbProjectC if(gbProjectC)
+            missing << "Genboree KB Project Name" unless(gbProject)
+          else
+            @errorMsg += "API_FAILED. Failed to get the grid configuration file - #{conf},  #{apiCaller.parseRespBody()}"
+            @errorMsg += "<br>The page you are looking for encountered an unexpected error.<br>"
+            @errorState = true
+          end
+        # query string from the URL
+        elsif(evGrp or evColl or  evKb or gbProj)
+          eviGrp = evGrp.nil? ? eviGrp : CGI.unescape(evGrp)
+          missing << 'evidenceGrp' unless(eviGrp)
+          eviKB = evKb.nil? ? eviKB : CGI.unescape(evKb)
+          missing << 'evidenceKb' unless(eviKB)
+          eviColl = evColl.nil? ? eviColl : CGI.unescape(evColl)
+          missing << 'evidenceColl' unless(eviColl)
+          gbProject = gbProj.nil? ? gbProject : CGI.unescape(gbProj)
+          missing << 'Project ID' unless(gbProject)
+        end
+        
+        if(missing.empty?)
+          transfertoJs << "var alleleHost = '#{CGI.escape(alleleHost.strip())}';"
+          transfertoJs << "var alleleGrp = '#{CGI.escape(alleleGrp.strip())}';"
+          transfertoJs << "var alleleKB = '#{CGI.escape(alleleKB.strip())}';"
+          transfertoJs << "var alleleColl = '#{CGI.escape(alleleColl.strip())}';"
+
+          transfertoJs << "var eviHost = '#{CGI.escape(eviHost.strip())}';"
+          transfertoJs << "var eviGrp = '#{CGI.escape(eviGrp.strip())}';"
+          transfertoJs << "var eviKB = '#{CGI.escape(eviKB.strip())}';"
+          transfertoJs << "var eviColl = '#{CGI.escape(eviColl.strip())}';"
+          
+          transfertoJs << "var guideHost = '#{CGI.escape(guideHost.strip())}';"
+          transfertoJs << "var guideGrp = '#{CGI.escape(guideGrp.strip())}';"
+          transfertoJs << "var guideKB = '#{CGI.escape(guideKB.strip())}';"
+          transfertoJs << "var guideColl = '#{CGI.escape(guideColl.strip())}';"
+          transfertoJs << "var guideDoc = '#{CGI.escape(guideDoc.strip())}';"
+         
+          transfertoJs << "var tagHost = '#{CGI.escape(tagHost.strip())}';"
+          transfertoJs << "var tagGrp = '#{CGI.escape(tagGrp.strip())}';"
+          transfertoJs << "var tagKB = '#{CGI.escape(tagKB.strip())}';"
+          transfertoJs << "var tagColl = '#{CGI.escape(tagColl.strip())}';"
+          transfertoJs << "var tagDoc = '#{CGI.escape(tagDoc.strip())}';"
+
+          transfertoJs << "var trHost = '#{CGI.escape(trHost.strip())}';"
+          transfertoJs << "var trGrp = '#{CGI.escape(trGrp.strip())}';"
+          transfertoJs << "var trKB = '#{CGI.escape(trKB.strip())}';"
+          transfertoJs << "var trDoc = '#{CGI.escape(trDoc.strip())}';"
+
+         
+          transfertoJs << "var subject = '#{CGI.escape(subject.strip())}';" if(subject)
+          transfertoJs << "var gbProject = '#{CGI.escape(gbProject.strip())}';"
+          transfertoJs << "var genboreeKBUrl = '#{genboreeKBUrl.strip()}';"
+          
+        else
+          @errorMsg = "Following configurations are missing. #{missing.inspect}\n. Cannot proceed with incomplete configuration."
+          @errorState = true
+        end
+      else
+        @errorMsg += "API_FAILED. Failed to get the grid configuration filei - BRL, #{apiCaller.parseRespBody()}"
+        @errorMsg += "<br>The page you are looking for encountered an unexpected error.<br>"
+        @errorState = true
+      end
+    rescue => aerr
+      @errorMsg += "ERROR: Failed getting all the parameters from the configuration - #{gridConfPath}.\n" +"- Exception: #{aerr.message}\n" + aerr.backtrace.join("\n")
+      @errorMsg += "<br>The page you are looking for encountered an unexpected error.<br>"
+      @errorState = true
+    end
+   unless(@errorState)
+ %>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>GENBOREE GRIDS - ClinGenGrid</title>
+      <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+      <meta content="utf-8" http-equiv="encoding">
+
+      <link rel="stylesheet" type="text/css" href="/javaScripts/ext-4.2.1/resources/css/ext-all.css?jsVer=<%= @context.genbConf.jsVer %>"/>
+      <link rel="stylesheet" type="text/css" href="/clingenInference/style/gridPage.css?jsVer=<%= @context.genbConf.jsVer %>"/>
+      <link rel="stylesheet" type="text/css" href="/clingenInference/style/tableViews.css?jsVer=<%= @context.genbConf.jsVer %>"/>
+
+      <script type="text/javascript" src="/javaScripts/ext-4.2.1/ext-all.js?jsVer=<%= @context.genbConf.jsVer %>"></script>
+      <script type="text/javascript" src="/javaScripts/util.js?jsVer=<%= @context.genbConf.jsVer %>"></script>
+
+      <script type="text/javascript" src="/clingenInference/javaScripts/treePanel.js?jsVer=<%= @context.genbConf.jsVer %>"></script>
+      <script type="text/javascript" src="/clingenInference/javaScripts/panels.js?jsVer=<%= @context.genbConf.jsVer %>"></script>
+      <script type="text/javascript" src="/clingenInference/javaScripts/advanceSearch.js?jsVer=<%= @context.genbConf.jsVer %>"></script>
+      <script type="text/javascript" src="/clingenInference/javaScripts/cellWindowEdit.js?jsVer=<%= @context.genbConf.jsVer %>"></script>
+      <script type="text/javascript" src="/clingenInference/javaScripts/ajax.js?jsVer=<%= @context.genbConf.jsVer %>"></script>
+      <script type="text/javascript" src="/clingenInference/javaScripts/template.js?jsVer=<%= @context.genbConf.jsVer %>"></script>
+     <div class="outerContainer">
+        <div class="mainContainer">
+          <div class="pageTitle">
+            ClinGen Pathogenicity Calculator
+          </div>
+          <div class="gb-logout-butt" onclick="javascript:window.location.href='/java-bin/login.jsp?rm=logout'; return false;">Logout</div>
+          <div class="container" id="panel"></div>
+      </div></div>
+       <script type="text/javascript" >
+        var eviDoc ;
+        var tags = new Object() ;
+        var parColor = new Object();
+        var subject ;
+        var gridView = "geneNames" ;
+        //First get the session default variables
+       <%= transfertoJs.string %>
+        Ext.onReady(function(){
+          // Set up tooltip singleton.
+          Ext.tip.QuickTipManager.init();
+          Ext.apply(Ext.tip.QuickTipManager.getQuickTip(),
+          {
+            maxWidth: 550,
+            minWidth: 250,
+            showDelay: 1000,
+            dismissDelay: 6000,
+            hideDelay: 0,
+            trackMouse: true
+          })
+          if(subject)
+          {
+            getTagStore() ;
+            makeBigGrid() ;
+          }
+          else
+          
+          {
+            makePanel() ;
+
+          }
+        });
+
+     </script>
+  </html>
+<%
+  end
+  end #unless(inGbSession)
+  rescue => err
+      $stderr.puts "-"*50
+      $stderr.puts  "ERROR:Problem generating data grid.\n" +
+      "- Exception: #{err.message}\n" +
+      err.backtrace.join("\n")
+      $stderr.puts "-"*50
+      @errorMsg += "ERROR:Problem generating data grid.\n" +"- Exception: #{err.message}\n" + err.backtrace.join("\n")
+      @errorMsg += "<br>The page you are looking for encountered an unexpected error.<br>"
+      @errorState = true
+  ensure
+    if(@errorState) %>
+
+        <span <b>ERROR:</b> There was an error creating and displaying the grid.</span>
+        <br><br>
+        <b>Error Details:</b><br>
+        <ul style="color: #C64848;"><li><%= @errorMsg %></li></ul>
+        <br><br>
+        <span class="contact">If you have questions, please contact <a href="mailto:genboree_admin@genboree.org">genboree_admin@genboree.org</a> for assistance.</span>
+    <% end
+end # begin
+
+
+%>

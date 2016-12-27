@@ -1,0 +1,48 @@
+{
+    "required": true,
+    "name": "EvidenceCacheID",
+    "domain": "string",
+    "index": true,
+    "description": "md5 digest of the combination of Canonical Allele URL, Evidence document URL and guideline URL acting as the key for the collection. Use '|' as delimter.",
+    "unique": true,
+    "identifier": true,
+    "properties": [
+      {
+        "required": true,
+        "name": "Evidence Doc",
+        "domain": "url",
+        "description": "URL of evidence doc this conclusion is for"
+      },
+      {
+        "required": true,
+        "name": "Guideline",
+        "domain": "url",
+        "description": "URL to guideline"
+      },
+      {
+        "required": true,
+        "name": "CanonicalAllele",
+        "domain": "url",
+        "index": true,
+        "description": "Subject"
+      },
+      {
+        "name": "EvidenceDocVersion",
+        "domain": "posInt",
+        "description": "Version of evidence doc this conclusion was made on"
+      },
+      {
+        "name": "Type",
+        "domain": "enum(ACMG, Other)",
+        "index": true,
+        "description": "is the conclusion based on ACMG or not?"
+      },
+      {
+        "required": true,
+        "name": "FinalCall",
+        "domain": "string",
+        "index": true,
+        "description": "what is the final assertion made by calculator"
+      }
+    ]
+}

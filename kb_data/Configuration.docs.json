@@ -1,0 +1,16 @@
+{
+  "Configuration": {
+    "value": "__USERNAME__",
+    "properties": {
+      "ConclusionCache": {
+        "value": "http://localhost/REST/v1/grp/pcalc_cache/kb/pcalc_cache/coll/ConclusionCache"
+      },
+      "CA2EvidenceCache": {
+        "value": "http://localhost/REST/v1/grp/pcalc_cache/kb/pcalc_cache/coll/EvidenceCache"
+      },
+      "EvidenceSource": {
+        "value": "http://localhost/REST/v1/grp/__USERNAME__/kb/__USERNAME__/coll/SourceRegistry"
+      }    
+    }
+  }
+}

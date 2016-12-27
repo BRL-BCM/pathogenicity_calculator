@@ -1,0 +1,178 @@
+/******************************************/
+/*Large Table settings*/
+/******************************************/
+table.gb-grid-large {
+  background-color: #F8F8F8;
+  Border-collapse: collapse;
+  border: 3px solid #3a9ee0;
+  margin-bottom: 10px ;
+  font-family: tahoma, arial, verdana, sans-serif
+}
+
+table.gb-grid-large th{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 14px;
+  font-weight: normal;
+  color: white;
+  background-color: #3a9ee0;
+  border: 1px solid #eeeeee;
+  text-align: center;
+  width:5%;
+ font-family: tahoma, arial, verdana, sans-serif;
+}
+/* Context settings to be change here*/
+table.gb-grid-large th.gb-context{
+  background-color: #0B4FB5;
+  width: 5% ;
+  text-align: left;
+  color: #E6E6E6;
+}
+table.gb-grid-large span.gb-context-rank1 {
+  color: #E6E6E6;
+  font-size: 14px ;
+  font-weight: bold ;
+}
+
+table.gb-grid-large span.gb-context-rank2 {
+  font-size: 0.001px;
+  color: yellow;
+  visibility : hidden ;
+}
+
+
+
+table.gb-grid-large span.gb-context.rank3 {
+  font-size: 12px;
+  color: #FFFFCC;
+}
+
+table.gb-grid-large span.gb-context-rankX {
+  font-size: 11px;
+  color: black;
+}
+/* First header row */
+table.gb-grid-large th.gb-part1-header-benign {
+  background-color: #dd5fa2;
+  font-weight: bold;
+  font-size: 14px;
+  color: #E6E6E6;
+  font-family:  tahoma,arial,verdana,sans-serif;
+  /*Lucida Sans Unicode,Lucida Sans, sans-seriff;*/
+}
+
+table.gb-grid-large th.gb-part1-header-1 {
+  background-color: #1cb257;
+  font-weight: bold;
+  font-size: 14px;
+  color: #E6E6E6;
+  font-family: tahoma, arial, verdana, sans-serif;
+}
+
+table.gb-grid-large th.gb-part1-header-pathogenic {
+  background-color: #1cb257 ;
+  font-weight: bold;
+  font-size: 14px;
+  color:#E6E6E6 ;
+}
+table.gb-grid-large th.gb-part1-header-2 {
+  background-color: #dd5fa2 !important ;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+}
+
+table.gb-grid-large th.gb-part3-header {
+  font-variant: all-petite-caps;
+  font-size: 18px ;
+  white-space: nowrap;
+  cursor : pointer ;
+}
+.gb-part3-headertemp:before {
+    font-family: FontAwesome;
+        top:0;
+        left:-5px;
+        padding-right:2px;
+        content: "\f03a";
+}
+/* Column main cell */
+table.gb-grid-large th{
+  background-color: #3a9ee0 ;
+  font-weight: normal;
+  color: white;
+  border: 1px solid white;
+  font-size: 14px;
+}
+
+table.gb-grid-large td.gb-dataCell {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #3a9ee0;
+  background: white ;
+  cursor: cell ;
+}
+
+/* Last row for Special value entry */
+table.gb-grid-large tr.gb-special .gb-specialStr{
+  font-size: 11px;
+  color: black;
+  text-align: left;
+}
+
+table.gb-grid-large tr.gb-special .list{
+  font-size: 11px;
+  color: #F89829;
+  text-align: left;
+}
+
+
+/* Special value cells inside the grid */
+table.gb-grid-large td.gb-dataCell-benign {
+  background-color: #dd5fa2;
+  cursor: pointer ;
+}
+table.gb-grid-large td.gb-dataCell-pathogenic {
+  background-color: rgb(194, 69, 82);
+  cursor: pointer ;
+}
+
+table.gb-grid-large td.gb-dataCell-invalid {
+  background-color: #eeeeee;
+  cursor: not-allowed  ;
+   color: #A9A9A9;
+}
+
+table.gb-grid-large td.gb-dataCell-invalidCount {
+  background-color: #eeeeee;
+  cursor: pointer ;
+  color: #A9A9A9;
+}
+
+
+table.gb-grid-large td.gb-dataCell-plain {
+  font-weight: bold;
+  color: #F89829;
+
+}
+table.gb-grid-large td.gb-dataCell-benign-highlighted {
+  background-color: rgb(143, 203, 190);
+}
+
+table.gb-grid-large td.gb-dataCell-pathogenic-highlighted {
+  background-color: rgb(69, 132, 194);
+}
+table.gb-grid-large td.gb-dataCell-gb-part1-header-1 {
+  background-color: #dd5fa2;
+}
+
+table.gb-grid-large td.gb-dataCell-gb-part1-header-0 {
+ background-color: #1cb257;
+}

@@ -1,0 +1,130 @@
+{
+  "data": {
+    "Questionnaire": {
+      "value": "newEviEvidence1Evidence",
+      "properties": {
+        "Coll": {
+          "value": "Evidence"
+        },
+        "Sections": {
+          "items": [
+            {
+              "SectionID": {
+                "value": "SEC1",
+                "properties": {
+                  "Text": {
+                    "value": "Key properties of the subject"
+                  },
+                  "Questions": {
+                    "items": [
+                      {
+                        "QuestionID": {
+                          "value": "QUE1",
+                          "properties": {
+                            "Question": {
+                              "value": "What is the Evidence document ID?",
+                              "properties": {
+                                "PropPath": {
+                                  "value": "",
+                                  "properties": {
+                                    "Domain": {
+                                      "value": "autoID(CLI,uniqAlphaNum,EV)",
+                                      "properties": {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "QuestionID": {
+                          "value": "QUE2",
+                          "properties": {
+                            "Question": {
+                              "value": "The Evidence requires a valid subject url",
+                              "properties": {
+                                "PropPath": {
+                                  "value": "Subject",
+                                  "properties": {
+                                    "Domain": {
+                                      "value": "url",
+                                      "properties": {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "QuestionID": {
+                          "value": "QUE3",
+                          "properties": {
+                            "Question": {
+                              "value": "Evidence will be provided for which condition?",
+                              "properties": {
+                                "PropPath": {
+                                  "value": "Subject.Phenotype",
+                                  "properties": {
+                                    "Domain": {
+                                      "value": "string",
+                                      "properties": {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "QuestionID": {
+                          "value": "QUE4",
+                          "properties": {
+                            "Question": {
+                              "value": "What is the Mode of Inheritance?",
+                              "properties": {
+                                "PropPath": {
+                                  "value": "Subject.Mode of inheritance",
+                                  "properties": {
+                                    "Domain": {
+                                      "value": "enum(Autosomal Dominant,Autosomal Recessive,X-linked Dominant,X-linked Recessive,Mitochondrial,Multifactorial,Other,Unknown)",
+                                      "properties": {
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "value": null
+                  },
+                  "Template": {
+                    "value": "newEviTempEvidence1Evidence"
+                  },
+                  "Type": {
+                    "value": "modifyProp"
+                  }
+                }
+              }
+            }
+          ],
+          "value": null
+        }
+      }
+    }
+  },
+  "status": {
+    "msg": "OK",
+    "statusCode": "OK"
+  }
+}

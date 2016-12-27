@@ -1,0 +1,105 @@
+{
+  "name": "Allele evidence",
+  "unique": true,
+  "required": true,
+  "identifier": true,
+  "domain": "autoID(CLI,uniqAlphaNum,EV)",
+  "properties": [
+    {
+      "name": "Subject",
+      "required": true,
+      "domain": "url",
+      "properties": [
+        {
+          "name": "Phenotype",
+          "required": true,
+          "domain": "string"
+        },
+        {
+          "default": "Unknown",
+          "name": "Mode of inheritance",
+          "required": true,
+          "domain": "enum(Autosomal Dominant, Autosomal Recessive, X-linked Dominant, X-linked Recessive, Mitochondrial, Multifactorial, Other, Unknown)"
+        },
+        {
+          "name": "Evidence Tags",
+          "domain": "numItems",
+          "items": [
+            {
+              "index": true,
+              "name": "Evidence Tag",
+              "unique": true,
+              "required": true,
+              "identifier": true,
+              "domain": "autoID(EV,uniqAlphaNum,TAG)",
+              "properties": [
+                {
+                  "default": "CHOOSE_ONE",
+                  "name": "Tag",
+                  "domain": "enum(CHOOSE_ONE,PVS1, PS1, PS2, PS3, PS4, PM1, PM2, PM3, PM4, PM5, PM6, PP1, PP2, PP3, PP4, PP5, BP1, BP2, BP3, BP4, BP5, BP6, BP7, BS1, BS2, BS3, BS4, BA1, BS1-Supporting, BS2-Supporting, BP1-Strong, BP3-Strong, BP4-Strong, BP7-Strong, BS3-Supporting, BS4-Supporting, BP2-Strong, BP6-Strong, BP5-Strong, PM2-Supporting, PS4-Supporting, PM4-Supporting, PM5-Supporting, PS1-Supporting, PVS1-Supporting, PM1-Supporting, PS3-Supporting, PM6-Supporting, PS2-Supporting, PM3-Supporting, PS4-Moderate, PP3-Moderate, PS1-Moderate, PVS1-Moderate, PP2-Moderate, PS3-Moderate, PP1-Moderate, PS2-Moderate, PP5-Moderate, PP4-Moderate, PM2-Strong, PP3-Strong, PM4-Strong, PM5-Strong, PVS1-Strong, PM1-Strong, PP2-Strong, PP1-Strong, PM6-Strong, PM3-Strong, PP5-Strong, PP4-Strong, PM2-Very Strong, PS4-Very Strong, PS1-Very Strong, PM4-Very Strong, PM5-Very Strong, PP3-Very Strong, PP2-Very Strong, PM1-Very Strong, PS3-Very Strong, PP1-Very Strong, PM6-Very Strong, PS2-Very Strong, PM3-Very Strong, PP5-Very Strong, PP4-Very Strong)",
+                  "properties": [
+                    {
+                      "default": "On",
+                      "name": "Status",
+                      "required": true,
+                      "domain": "enum(On, Off)"
+                    },
+                    {
+                      "name": "Summary",
+                      "domain": "string"
+                    },
+                    {
+                      "default": "CHOOSE_ONE",
+                      "name": "Pathogenicity",
+                      "required": true,
+                      "domain": "enum(CHOOSE_ONE, Pathogenic, Benign)"
+                    },
+                    {
+                      "default": "CHOOSE_ONE",
+                      "name": "Strength",
+                      "required": true,
+                      "domain": "enum(CHOOSE_ONE, Strong, Very Strong, Moderate, Supporting, Stand Alone)"
+                    },
+                    {
+                      "default": "CHOOSE_ONE",
+                      "name": "Type",
+                      "required": true,
+                      "domain": "enum(CHOOSE_ONE, Computational And Predictive Data, Functional Data, Population Data, Allelic Data, De novo Data, Segregation Data, Other Data, Other Database)"
+                    },
+                    {
+                      "name": "Links",
+                      "domain": "numItems",
+                      "items": [
+                        {
+                          "index": true,
+                          "name": "Link",
+                          "unique": true,
+                          "required": true,
+                          "identifier": true,
+                          "domain": "url",
+                          "properties": [
+                            {
+                              "name": "Comment",
+                              "domain": "string"
+                            },
+                            {
+                              "default": "Unknown",
+                              "name": "Link Code",
+                              "domain": "enum(Supports, Disputes, Unknown)"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "category": true
+                }
+              ],
+              "category": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

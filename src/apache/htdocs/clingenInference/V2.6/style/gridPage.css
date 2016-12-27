@@ -1,0 +1,1218 @@
+
+/* ARJ */
+
+/* For ExtJS grid/table widgets to ALLOW text selection (copy/paste) NO MATTER WHAT. Can't configure via extJS. */
+/* - Crap this doesn't work on clingen page, but does on workbench. Different ExtJS, or different context/parents. */
+/* - Does work for Firefox though. */
+.x-grid3-row td,
+.x-grid3-summary-row td,
+.x-grid3-cell-text,
+.x-grid3-hd-text,
+.x-grid3-hd,
+.x-grid3-row,
+.x-grid-cell,
+.x-grid-cell-inner,
+.x-grid-cell-inner *,
+.x-unselectable,
+.x-unselectable *,
+.x-selectable, .x-selectable *
+{
+  -moz-user-select: text !important;
+  -khtml-user-select: text !important;
+  -webkit-user-select: text !important;
+  -o-user-select: text !important ;
+  -ms-user-select: text !important ;
+}
+
+span.gb-tip-footnote {
+  font-size: 88%;
+  font-style: italic;
+}
+
+ul.gb-tip {
+  list-style-type: disc;
+  font-size: 11px;
+  margin: 0 0 0 10px !important ;
+  padding: 0px !important;
+}
+
+ul.gb-tip li {
+  margin-left: 10px ;
+  list-style-type: circle ;
+  font-size: 11px;
+}
+
+li.gb-tip-tagon {
+  margin-left: 20px ;
+  list-style-type: circle ;
+  font-size: 11px;
+  color: #3a9ee0 ;
+
+
+
+}
+
+.gb-text-ruleHilite {
+  background-color: #FEE6CF;
+}
+
+.gb-text-invalid {
+  background-color: #EEEEEE;
+}
+
+.gb-text-nowrap {
+  white-space: nowrap;
+}
+
+.gb-cell-conclusion {
+  font-weight: bold;
+}
+
+span.gb-cond-overmet {
+  font-size: 13px ;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+span.gb-cond-over-unmet {
+  font-size: 13px ;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+div.pageTitle {
+    border-width: 0;
+    color: #3a9ee0;
+    font-family: tahoma,arial,verdana,sans-serif;
+    font-size: 2em;
+    font-variant: small-caps;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    margin-top : 10px ;
+}
+
+div.gb-logout-butt {
+  width: 5% ;
+  margin-left: 75% ;
+  margin-right: 20% ;
+  background-color: #3a9ee0 ;
+  color: white ;
+  float: right;
+  margin-top: -36px;
+  font-size: 1.2em;
+  border: 1px solid #3a9ee0;
+  border-radius: 0px;
+  font-family: tahoma,arial,verdana,sans-serif;
+  padding: 5px 5px 5px 5px;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+}
+.gb-logout-butt::after {
+    font-family: FontAwesome !important;
+    content: "\f08b";
+    padding-left: 10px;
+}
+
+
+
+div.gb-dashboard-butt {
+  width: 7% ;
+  margin-left: 75% ;
+  margin-right: 10% ;
+  background-color: #3a9ee0 ;
+  color: white ;
+  float: right;
+  margin-top: -36px;
+  font-size: 1.2em;
+  border: 1px solid #3a9ee0;
+  border-radius: 0px;
+  font-family: tahoma,arial,verdana,sans-serif;
+  padding: 5px 5px 5px 5px;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+}
+.gb-dashboard-butt::after {
+    font-family: FontAwesome !important;
+    content: "\f015";
+    padding-left: 10px;
+}
+
+
+/*Placement of the div elements*/
+/*
+div.container {
+  width: 1000px;
+}
+*/
+/* Lists in dialogs (extjs did 0 margin, 0 padding normalization) */
+ul.gbDialogList {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 10px;
+}
+
+ul.gbDialogList li {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 10px;
+}
+
+/* Highlight cells icon column */
+.gb-icon-col {
+  text-align: center ;
+}
+
+/*.x-panel-header-text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: 'center' !important;
+  font-family: 'Roboto',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+*/
+/* Allele grid */
+#alleleGrid {
+  border: 2px solid #3A9EE0;
+}
+
+#summaryGrid {
+  border: 2px solid #3A9EE0;
+}
+
+#multitab {
+  border: 2px solid #3A9EE0;
+}
+#sainsideGrid {
+  border: 2px solid #99BCE8;
+}
+
+#insideGrid {
+  border: 2px solid #99BCE8;
+}
+/* Reasoner grid */
+#reasonerGrid {
+  border: 3px solid #3A9EE0;
+}
+
+#messageGrid {
+  border: 3px solid #3A9EE0;
+}
+.message {
+
+  text-align: center;
+  padding-top: 80px;
+  color : #3A9EE0 ;
+  font-size: 16px;
+}
+
+.publicWin {
+
+  text-align: center;
+  padding: 5px;
+  color : #3A9EE0 ;
+  font-size: 12px;
+
+}
+/* Mutli Tab Panel */
+.x-panel-body-default {
+ border-style: none ;
+}
+
+.multitabgrid .x-tab-bar-body {
+  background-color: white ;
+}
+.multitabgrid .x-tab-bar-default {
+  border-style: none ;
+}
+
+.x-tab-default .x-tab-inner{
+  /*color: #5fa2dd;*/
+  color: #ffffff ;
+  font-family: tahoma,arial,verdana,sans-serif;
+  border: 0px solid white;
+  font-weight: normal;
+}
+
+.x-tab-default-active .x-tab-inner {
+  color: #5fa2dd;
+  font-weight: 700;
+  font-size:14px;
+  /*color: #fff;*/
+  font-family: tahoma,arial,verdana,sans-serif;
+}
+
+.x-tab-default-active {
+  background: #fff !important;
+  color: #5fa2dd !important;
+}
+
+.x-tab-default,.x-tab-default-active {
+ padding: 5px 20px 5px 20px;
+ background: #5fa2dd ;
+ border-radius: 0px;
+ border-bottom: 0px solid white;
+}
+.x-panel-header-default-top {
+    box-shadow: 0 0 0 0 #f4f8fd inset;
+}
+.outerContainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+.image{
+  bottom:5px;
+  left:80px;
+}
+
+.outerContainer .mainContainer{
+  position:relative;
+  top: 30px;
+  background-color:white;
+  border-radius: 10px;
+  width: 1000px ;
+  padding-bottom: 20px ;
+}
+
+/*.gvRefresh {
+  background-image: url('/clingenInference/images/Refresh_16x16.png') !important;
+}*/
+.gvRefresh::before {
+    font-family: "FontAwesome";
+    content: "\f12d";
+}
+/*
+.gvcopyTags {
+  background-image: url('/images/silk/table_add.png') !important;
+}
+*/
+.gvcopyTags::before {
+    font-family: "FontAwesome";
+    content: "\f0c5";
+}
+.variantNode {
+  padding: 1px; !important;
+}
+/*
+.gvEvDoc {
+  background-image: url('/images/silk/application_go.png') !important;
+}
+*/
+
+.gvEvDoc::before {
+    font-family: "FontAwesome";
+    content: "\f016";
+}
+
+/*
+
+.newEvDoc {
+  background-image: url('/images/silk/application_add.png') !important;
+}
+
+.deleteEvDoc {
+  background-image: url('/images/silk/application_delete.png') !important;
+} 
+*/
+
+.newEvDoc::before {
+    font-family: "FontAwesome";
+    content: "\f196";
+}
+.deleteEvDoc::before {
+    font-family: "FontAwesome";
+    content: "\f147";
+}
+
+.x-menu-item-link {
+   color: #5fa2dd;
+}
+.x-form-item-label {
+   color: #686868;
+}
+
+.x-toolbar > .x-box-inner {
+   background: white;
+}
+/*
+.downloadreport {
+  background-image: url('/images/download.png') !important;
+}
+.viewreport {
+  background-image: url('/images/silk/application_view_detail.png') !important;
+}
+*/
+
+.downloadreport::before  {
+    font-family: "FontAwesome";
+    content: "\f0f6";
+}
+
+.viewreport::before, .alleleReport::before  {
+    font-family: "FontAwesome";
+    content: "\f0f6";
+}
+.taghelp::before  {
+    font-family: "FontAwesome";
+    content: "\f129";
+}
+
+.clinvarSubmission::before  {
+    font-family: "FontAwesome";
+    content: "\f045";
+}
+
+/*.alleleReport {
+  background-image: url('/images/silk/application_view_list.png') !important;
+}*/
+
+/*
+.taghelp {
+  background-image: url('/images/silk/help.png') !important;
+}*/
+
+/*
+.gvAdvanced {
+  background-image: url('/images/silk/magnifier.png') !important;
+}*/
+
+.gvAdvanced::before {
+    font-family: "FontAwesome";
+    content: "\f002";
+}
+
+/*
+.addTag {
+  background-image: url('/images/silk/layout_add.png') !important;
+}
+.deleteTag {
+  background-image: url('/images/silk/layout_delete.png') !important;
+}*/
+.addTag::before, .addLinks::before {
+    font-family: "FontAwesome";
+    content: "\f196";
+}
+.deleteTag::before, .deleteLink::before {
+    font-family: "FontAwesome";
+    content: "\f147";
+}
+.saveLinks::before, .saveTag::before {
+    font-family: "FontAwesome";
+    content: "\f0c7";
+}
+
+/*
+
+.addLinks {
+  background-image: url('/images/silk/link_add.png') !important;
+}
+.addLink {
+  background-image: url('/images/silk/link_add.png') !important;
+}
+.deleteLink {
+  background-image: url('/images/silk/link_delete.png') !important;
+}
+.saveTag {
+  background-image: url('/images/silk/disk.png') !important;
+}
+.saveLinks {
+  background-image: url('/images/silk/disk.png') !important;
+} */
+.goTag {
+  background-image: url('/images/silk/link_go.png') !important;
+}
+
+.x-panel.mainPanel {
+  /*border: 2px solid #F89829;*/
+
+}
+/*keep the panel header for the entry page white*/
+/*get rid of strange blue border*/
+.mainPanel .x-panel-header {
+  background: white no-repeat 0 -1px;
+  border-top-color: white;
+  border-left-color: white;
+  border-right-color: white;
+}
+
+.mainPaging  {
+  border-color: white;
+  border-width: 1px;
+  background-image: none;
+  background-color: white;
+}
+.mainPanel .x-column-header {
+  border-right-style: none !important;
+  /*border-bottom-style: solid !important;*/
+}
+
+/*Entry page toolbar controls*/
+.mainPanel .x-btn-default-toolbar-small .x-btn-inner {
+ font-size: 15px;
+ font-weight: 500;
+ /*font-family: Lucida Sans Unicode,Lucida Sans, sans-seriff;*/
+ font-family: tahoma,arial,verdana,sans-serif ;
+ color: #686868 ;
+}
+
+
+.mainPanel .x-column-header-inner {
+    color: #686868 ;
+    background: white;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: tahoma,arial,verdana,sans-serif ;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+}
+
+.mainPanel .x-grid-row-collapsed .x-grid-row-expander {
+    font-family: FontAwesome !important;
+    content: "\f08e";
+    padding-left: 5px;
+}
+
+.x-window-header {
+  background: #5fa2dd no-repeat 0 -1px;
+}
+
+.x-window-header-text {
+  color: #fff ;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: 'center' !important;
+  font-family: Lucida Sans Unicode,Lucida Sans, sans-seriff;
+}
+
+.firstRow .x-grid-cell-inner{
+  border-top-color: black;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+
+#cellWindow {
+  border: 3px solid #3A9EE0;
+  background-color: #3a9ee0 ;
+}
+
+/*Toobar header*/
+.x-component.x-component-default.x-box-item.x-toolbar-item {
+  height: 20px;
+}
+
+.mainPanel .x-panel-header-text {
+  color: #686868;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: 'center' !important;
+  font-family: Lucida Sans Unicode,Lucida Sans, sans-seriff;
+}
+
+.x-toolbar.gvToolBar {
+  border-top-color: white;
+  border-left-color: white;
+  border-right-color: white;
+  font-family: Lucida Sans Unicode,Lucida Sans, sans-seriff;
+}
+
+
+
+.mainPanel .x-grid-header-ct {
+	border: 1px solid black;
+	border-left-color: white;
+	border-right-color: white;
+}
+
+.mainPanel .x-grid-cell-special {
+	background-image: none;
+}
+
+.mainPanel .x-grid-cell-inner {
+  font-size: 12px;
+ font-weight: normal;
+ font-family: tahoma,arial,verdana,sans-serif;
+ color: #686868 ;
+ padding: 5px ;
+}
+.popGrid {
+  background-color: #FFFFFF;
+}
+
+.largehtml_custom_tool .x-tool-largehtml{
+  background-image: url('/clinGenGrid/images/external-link-14x14Blue.png') !important;
+  /*padding:5px !important;*/
+}
+
+.mainPanel .x-column-header-text {
+  font-weight: bold;
+  border-right-style:  none !important;
+  font-family: tahoma, arial, verdana, sans-serif
+  font-size: 12px;
+  text-align: 'center';
+}
+.sainside .x-column-header-text {
+  font-weight: bold;
+  color: #686868 ;
+  font-size: 12px;
+  text-align: 'center';
+  font-family: tahoma, arial, verdana, sans-serif
+}
+ 
+.mainPanel .x-grid-rowbody {
+ font-size: 12px;
+ font-weight: normal;
+ font-family: tahoma, arial, verdana, sans-serif
+ color: #686868 ;
+
+}
+/*Calculator related styles*/
+.calculator .x-panel-header {
+  background: #5fa2dd no-repeat 0 -1px;
+  /*
+  border-top-color: white;
+  border-left-color: white;
+  border-right-color: white;
+  */
+}
+.calculator .x-btn-default-toolbar-small .x-btn-inner {
+ font-size: 13px;
+ font-weight: 500;
+ font-family: tahoma, arial, verdana, sans-serif
+ color: #fff ;
+}
+
+.calculator .x-panel-header-text {
+  color: #fff ;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: 'center' !important;
+  font-family:  tahoma, arial, verdana, sans-serif
+}
+
+
+
+.x-column-header-inner {
+  text-align: center;
+  background: rgba(158, 199, 234, 0.3)
+  color: #686868;
+}
+.largeWin ul {
+  list-style-type: disc;
+  font-size: 11px;
+   margin-left: 1.2em ;
+}
+/*Need this as the color is very dark on IE*/
+.x-column-header{
+ background-color: #eeeeee
+
+}
+
+
+.largeWin li {
+  margin-left: 1.6em ;
+  list-style-type: circle ;
+  font-size: 11px;
+}
+
+.rulesZero .x-change-cell {
+  background-color: rgb(254, 230, 207);
+  color: black ;
+}
+.rulesOne .x-change-cell {
+  background-color: #ffffdf;
+  color: black;
+}
+
+
+span.showHigh {
+  /* background-image: url('/images/silk/calendar_add.png') !important; */
+  background-repeat: no-repeat ;
+  height: 18px;
+  width: 18px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.showHigh::before {
+  font-family: "FontAwesome";
+  content: "\f096";
+}
+
+span.toshowTab {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #dd5fa2;
+  color: #fff;
+  padding: 2px 10px 2px 10px;
+  border-top: 1px solid #DCE6F5;
+  border-right: 1px solid #DCE6F5;
+  border-bottom: 1px solid #DCE6F5;
+  border-left: 1px solid #DCE6F5;
+  cursor: pointer ;
+  border-radius: 0px;
+}
+
+span.tohideTab {
+font: bold 11px Arial;
+  text-decoration: none;
+  /*background-color: #d8d7d5;*/
+  background-color: #1cb257;
+  color: white;
+  /*color : rgb(0, 128, 64) ;*/
+  padding: 2px 10px 2px 10px;
+  border-top: 1px solid #DCE6F5;
+  border-right: 1px solid #DCE6F5;
+  border-bottom: 1px solid #DCE6F5;
+  border-left: 1px solid #DCE6F5;
+  cursor: pointer ;
+  border-radius: 0px;
+}
+span.tohideTab::before {
+  font-family: "FontAwesome";
+  content: "\f070";
+  padding-right: 5px;
+}
+
+span.calculatorIcon {
+font: 500 11px Arial;
+  text-decoration: none;
+  background-color: #5fa2dd;
+  color: white;
+  padding: 2px 10px 2px 10px;
+  border-top: 1px solid #DCE6F5;
+  border-right: 1px solid #DCE6F5;
+  border-bottom: 1px solid #DCE6F5;
+  border-left: 1px solid #DCE6F5;
+  cursor: pointer ;
+  border-radius: 0px;
+}
+span.calculatorIcon::before {
+  font-family: "FontAwesome";
+  content: "\f1ec";
+  padding-right: 5px;
+}
+
+span.tocreateTab {
+  background-color: #5fa2dd;
+  color: white;
+  font: bold 11px Arial;
+  text-decoration: none;
+  padding: 2px 10px 2px 10px;
+  border-top: 1px solid #DCE6F5;
+  border-right: 1px solid #DCE6F5;
+  border-bottom: 1px solid #DCE6F5;
+  border-left: 1px solid #DCE6F5;
+  cursor: pointer ;
+}
+
+span.tocreateTab::before {
+  font-family: "FontAwesome";
+  content: "\f044";
+  padding-right: 5px;
+}
+
+span.toshowTab:hover {
+    background-color: #fff;
+    color: #dd5fa2;
+    border: 1px solid #dd5fa2;
+}
+
+span.toshowTab:before {
+  font-family: "FontAwesome";
+  content: "\f06e";
+  padding-right: 5px;
+}
+
+span.tocreateTab:hover {
+    background-color: #fff;
+    color: #5fa2dd;
+    border: 1px solid #5fa2dd;
+    
+}
+span.tohideTab:hover {
+  /*background-color: #ffffe6;*/
+  background-color: white;
+  color: #1cb257;
+  border: 1px solid #1cb257;
+}
+/*#tabicon{
+ text-align: center;
+}
+*/
+span.hideHigh {
+  /*background-image: url('/images/silk/calendar_delete.png') !important;*/
+  background-repeat: no-repeat ;
+  height: 18px;
+  width: 18px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+.hideHigh::before {
+  font-family: "FontAwesome";
+  content: "\f046"
+}
+
+img.highlightColHeader {
+  padding-top: 2px;
+  position: relative;
+  top: 4px;
+}
+
+.x-grid-group-hd-collapsible .x-grid-group-title {
+
+  color: #3a9ee0;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Lucida Sans Unicode,Lucida Sans, sans-seriff;
+}
+
+.x-grid-group-hd {
+
+ background-color: #DCE6F5;
+ border-style: none;
+}
+
+
+.x-tab-strip-active .x-tab-strip-text{
+color: red !important;
+}
+
+.gb-wait {
+        cursor: wait;
+}
+
+
+/*Canonical allele test on the first panel*/
+span.catext {
+
+  font-weight: bold;
+  color: #3a9ee0;
+
+}
+
+div.tabicon {
+
+  text-align: center;
+  
+}
+
+/*Style for custom header 
+ * Change here to get the desired styling for custom header and footer*/
+#header {
+  position: relative;
+  background-color: white;
+  width: 900px;
+  height: 140px;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+}
+
+#headerLeft{
+  width: 600px;
+  height: 140px;
+  float:left;
+}
+
+#headerRight{
+  float: right;
+  height: 140px;
+  width: 300px;
+}
+
+#headerLogo {
+  height: 140px;
+  width: 500px;
+  float: left;
+}
+
+
+/*Style for footers can be changed here*/
+#footer {
+  margin: 0 auto;
+  position: relative;
+  width: 930px;
+  height: 120px;
+  background-color: white;
+  border-top: 1px black solid;
+}
+
+#footerText {
+  margin-top: 15px;
+  background-color: white;
+  height: 30px;
+  display: block;
+  font-size: 8pt;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  float: left;
+}
+
+#footerLeft {
+   margin-left: 25px;
+   margin-top: 20px;
+   width: 500px;
+   height: 100px;
+   float: left;
+}
+
+#footerRight {
+   margin-right: 15px;
+   margin-top: 20px;
+   float: right;
+   height: 100px;
+   width: 320px;
+}
+
+#fundingText{
+   margin-bottom: 10px;
+   background-color: white;
+   display: block;
+   font-size: 8pt;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#footerImageLeft {
+  margin-left: 25px;
+  margin-top: 20px;
+  /*height: 100px;*/
+  width: 350px;
+  float: left;
+}
+
+#footerImageRight {
+  margin-right: 25px;
+  margin-top: 20px;
+  height: 100px;
+  width: 380px;
+  float: right;
+}
+
+#footerCenter {
+   text-align: center;
+   margin: 0 auto;
+   background-color: white;
+   display: block;
+   font-size: 8pt;
+   font-weight: normal;
+   text-decoration: none;
+}
+
+/*centering the panels to the outer container*/
+.x-box-inner {
+
+ margin: auto;
+}
+
+
+.summaryheader .x-box-inner {
+
+ margin: 0px;
+}
+
+.grayed {
+color: lightgray;
+background-color: whitesmoke;
+font-style: italic;
+}
+
+div.tag_warning {
+
+  color: orange;
+  font-style: italic;
+}
+
+div.tag_prohibit {
+  color: red;
+  font-style: italic;
+
+}
+span.tag_warning {
+  color: orange;
+  font-weight: bold ;
+}
+ 
+
+span.tag_prohibit {
+  color: red ;
+  font-weight: bold ;
+}
+
+div#panel {
+  /*float: left;
+  margin-left: 17%;
+  margin-right: 17%;
+  clear: both;*/
+  width: 80%;
+  /*margin: auto;*/
+  /*margin-bottom: 3%;*/
+  margin: auto;
+}
+
+@media (min-width : 800px) and (max-width : 1400px) {
+div#panel {
+  width: 100%;
+  margin: auto;
+}
+}
+@media (min-width : 200px) and (max-width :  800px) {
+div#panel {
+  width: 200%;
+  margin: auto;
+}
+}
+
+div#detailData{
+  white-space: normal;
+  font-family: Lucida Sans Unicode,Lucida Sans, sans-seriff;
+}
+
+a.linkbutton:hover {
+    background-color: #ffffe6;
+}
+
+.linkbutton:before {
+        font-family: FontAwesome;
+        top:0;
+        left:-5px;
+        padding-right:2px;
+        content: "\f08e"; 
+    }
+
+
+div.cellWindow{
+ font-size: 14px;
+}
+span.cellWindow{
+ font-size: 14px;
+}
+
+img.allelewarning {
+  padding-right : 8px ;
+}
+
+.grid-data-empty {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font: bold 14px Arial ;
+    color: #a19797;
+}
+
+.genewarning {
+	font-size: 10px;
+	background: #fff repeat scroll 0% 0%;
+        font-family: tahoma,arial,verdana,sans-serif;
+}
+.linkbutton {
+	font: bold 11px Arial;
+	text-decoration: none;
+	color: #3a9ee0;
+	border-bottom: 1px dotted #3a9ee0;
+}
+.usecase {
+  font: bold 14px Arial;
+  text-decoration: none;
+  color: #3a9ee0;
+  border-bottom: 1px dotted #3a9ee0;
+
+}
+
+div.tagLinksWindow {
+ padding-bottom: 6px;
+ padding-top: 6px;
+ font-size: 14px;
+ font-family: tahoma, arial, verdana, sans-serif;
+}
+
+
+span.tagcode{
+  color: #3a9ee0;
+  font-weight: bold ;
+}
+
+.selectedClassForRow {
+   background-color: #CFE6FA !important;
+}
+
+div.numLinks{
+  float: right ;
+}
+
+div.numLinksText {
+ float: right;
+ background-color: rgb(196, 223, 240);;
+ color: black;
+ border-radius: 3px;
+ padding: 2px;
+ white-space: nowrap ;
+ text-align: center;
+ width: 20px;
+ font-family: Lucida Sans Unicode,Lucida Sans, sans-seriff;     
+}
+a.allelelink {
+
+  cursor: pointer ;
+
+}
+
+
+.multitabgrid .x-panel-body {
+    background-color: white;
+}
+.x-grid-cell{
+  font-weight: normal;
+  color: #686868 ;
+  font-size: 12px;
+  text-align: 'center';
+  font-family: tahoma, arial, verdana, sans-serif;
+
+}
+
+.calculator .x-column-header {
+  font-weight: normal;
+  color: #686868 ;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: 'center';
+  font-family: tahoma, arial, verdana, sans-serif;
+}
+
+.mainPanel .x-btn-default-toolbar-small .x-btn-inner{
+ color: #fff;
+}
+
+.x-btn-default-toolbar-small {
+ color: #fff;
+ background-color: #5fa2dd;
+ border-radius: 0px;
+}
+
+
+.x-btn-default-toolbar-small .x-btn-arrow {
+ background-image: none !important;
+}
+
+#gvAdvanced-btnInnerEl::after {
+    font-family: FontAwesome !important;
+    content: "\f078";
+    padding-left:5px;
+    padding-right: 0px;
+}
+.x-menu-item{
+ background-color: #fff;
+ color: #3a9ee0;
+ font-weight: 500;
+ font-size: 12px;
+ padding:5px;
+}
+.x-menu-item-text{
+ font-family: tahoma,arial,verdana,sans-serif;
+ /*font-weight: bold;*/
+ font-size: 14px;
+ color: #3a9ee0;
+}
+.x-menu-item-icon.gvAdvanced {
+    color: #3a9ee0;
+}
+.x-header-text {
+    color: white;
+    font-family: tahoma,arial,verdana,sans-serif;
+    border-radius: 0px;
+}
+.x-panel-body{
+    background-color:white;
+    border-radius: 0px;
+}
+.x-toolbar-footer {
+    background-color:white;
+    border-radius: 0px;
+}
+.x-window, .x-panel {
+    background-color:white;
+    border-radius: 0px;
+}
+.x-header{
+    border-radius: 0px;
+}
+.x-window-header, .x-panel-header{
+   padding: 10px;
+}
+.x-btn-noicon{
+  background: #3a9ee0;
+  color:white;
+  padding:5px;
+  border-radius:0px;
+}
+.x-btn-default-toolbar-small-icon-text-left {
+  padding: 10px;
+}
+.x-btn-inner.x-btn-inner-center {
+  color: white;
+  font-family: tahoma,arial,verdana,sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 0px;
+}
+.x-grid-cell-inner > b {
+  font-family: tahoma,arial,verdana,sans-serif;
+  font-weight: 600;
+}
+.x-panel-header {
+ background: #5fa2dd; 
+}
+.x-container.x-box-item.x-window-item.x-container-default.x-box-layout-ct {
+  background: #fff;
+}
+.x-column-header-inner{
+  background: #fff;
+}
+.x-column-header-text{
+  font-weight: bold;
+  color: #686868 ;
+  font-size: 12px;
+  font-family: tahoma, arial, verdana, sans-serif
+  padding: 10px;
+}
+.mainPanel .x-btn-default-toolbar-small .x-btn-inner:hover , .x-btn-inner.x-btn-inner-center:hover, .x-btn-default-toolbar-small:hover {
+  color: #5fa2dd;
+}
+
+.myWindowCls .x-window-body {
+  background-color: white;
+}
+.numevi {
+  padding: 0px 5px 0px 5px;
+  border-radius: 2px;
+  background-color: gray;
+  color:white;
+}
+.benignst {
+  background-color: #559156;
+}
+.benign {
+  background-color: #559156;
+}
+.likelybenign {
+  background-color: #718344;
+}
+.pathogenic {
+  background-color: #E54E00;
+}
+.likelypathogenic {
+  background-color: #C85B11;
+}
+.evidences {
+  background-color: #fff;
+  color: black;
+}

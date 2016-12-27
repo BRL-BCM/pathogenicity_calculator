@@ -1,0 +1,48 @@
+{
+    "required": true,
+    "name": "ConclusionCacheID",
+    "domain": "autoID(CLI,uniqAlphaNum,EV)",
+    "index": true,
+    "unique": true,
+    "identifier": true,
+    "properties": [
+      {
+        "required": true,
+        "name": "Evidence Doc",
+        "domain": "url",
+        "index": true,
+        "description": "URL of evidence doc this conclusion is for",
+        "properties": [
+          {
+            "name": "Version",
+            "domain": "posInt",
+            "description": "Version of evidence doc this conclusion was made on"
+          }
+        ]
+      },
+      {
+        "name": "Guideline",
+        "domain": "url",
+        "index": true,
+        "description": "URL to guideline"
+      },
+      {
+        "name": "Type",
+        "domain": "enum(ACMG, Other)",
+        "index": true,
+        "description": "is the conclusion based on ACMG or not?"
+      },
+      {
+        "required": true,
+        "name": "FinalCall",
+        "domain": "string",
+        "index": true,
+        "description": "what is the final assertion made by calculator"
+      },
+      {
+        "name": "ReasonerOutput",
+        "domain": "modeledDocument",
+        "description": "The document generated as a result of running the reasoner."
+      }
+    ]
+}

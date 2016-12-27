@@ -1,0 +1,50 @@
+{
+  "domain": "autoID(ASUP, increment[6],,)",
+  "required": true,
+  "unique": true,
+  "properties": [
+    {
+      "domain": "url",
+      "properties": [
+        {
+          "domain": "numItems",
+          "items": [
+            {
+              "domain": "string",
+              "required": true,
+              "unique": true,
+              "properties": [
+                {
+                  "domain": "url",
+                  "required": true,
+                  "name": "url",
+                  "description": "http://exac.broadinstitute.org/variant/17-7579580-G-A"
+                },
+                {
+                  "domain": "string",
+                  "name": "Summary",
+                  "description": "ExAC for Allele Frequency"
+                }
+              ],
+              "identifier": true,
+              "index": true,
+              "name": "Source",
+              "description": "ExAC"
+            }
+          ],
+          "category": true,
+          "name": "Sources",
+          "description": "counter"
+        }
+      ],
+      "category": true,
+      "index": true,
+      "name": "Subject",
+      "description": "url of canonical allele"
+    }
+  ],
+  "identifier": true,
+  "index": true,
+  "name": "AlleleSupportingData",
+  "description": "identifier of doc"
+}

@@ -1,0 +1,25 @@
+name	domain	default	required	index	unique	fixed	category	identifier	Is Facet?	Concept	JSON-LD Flag	Relation to Subject	Object Type	comments
+Allele Registry ID	string		TRUE		TRUE			TRUE						
+- Date	string		TRUE											
+- Allele Information	[valueless]		TRUE			TRUE								
+-- HGVS	string		TRUE											
+-- Gene	string													
+- Phenotype	string													
+- Mode of Inheritance	string													
+* Evidence	numItems													
+*- TagID	string		TRUE		TRUE			TRUE						
+*-- Tag	string		TRUE											
+*--- Standard text	string		TRUE											
+*--- Summary	string		TRUE											
+*--- Category	string		TRUE											
+*--* Links	numItems													
+*--*- Link	url		TRUE		TRUE			TRUE						
+*--*-- Comment	string													
+- Assertion and Reasoning	[valueless]					TRUE								
+-- Final Call	string		TRUE											
+--* Rules Met 	numItems													
+--*- Rule	string		TRUE		TRUE			TRUE						
+-* Other Assertions Reached	numItems													
+-*- Call	string		TRUE		TRUE			TRUE						
+-*-* Rules Met 	numItems		TRUE											
+-*-*- Rule	string		TRUE		TRUE			TRUE						

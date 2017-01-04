@@ -9,7 +9,7 @@
     },
     {
       "domain": "url",
-      "required": true,
+      "required": false,
       "properties": [
         {
           "domain": "url",
@@ -41,37 +41,37 @@
     },
     {
       "domain": "url",
-      "required": true,
+      "required": false,
       "name": "Gene",
       "description": "Link to Gene collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}."
     },
     {
       "domain": "url",
-      "required": true,
+      "required": false,
       "name": "ReferenceSequence",
       "description": "Link to ReferenceSequence collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}."
     },
     {
       "domain": "url",
-      "required": true,
+      "required": false,
       "name": "CASourceLinks",
       "description": "Link to the collection where the source links for the canonical allele are present. It is this information that is used in the top most panel of the calculator."
     },
     {
       "domain": "url",
-      "required": true,
+      "required": false,
       "name": "GeneSourceLinks",
       "description": "Link to the collection where the source links for the gene are present. It is this information that is used in the top most panel of the calculator."
     },
     {
       "domain": "url",
-      "required": true,
+      "required": false,
       "name": "ContextualAllele",
       "description": "Link to the Contextual Collection."
     },
     {
       "domain": "url",
-      "required": true,
+      "required": false,
       "name": "RegistryAddress",
       "description": "Link to the Registry Address."
     }

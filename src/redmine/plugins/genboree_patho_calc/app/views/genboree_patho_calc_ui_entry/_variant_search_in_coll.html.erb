@@ -1,0 +1,17 @@
+<div class="modal fade " id="variantSearchInCollModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Search Variant</h4>
+      </div>
+      <div class="modal-body">
+        <% @searchTgt = :collection %>
+        <%= render(:partial => "genboree_patho_calc_ui_entry/variant_search_form") %>
+        <div class="not-found-message">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

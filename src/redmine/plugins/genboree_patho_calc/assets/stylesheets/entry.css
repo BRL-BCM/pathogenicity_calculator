@@ -1,0 +1,131 @@
+.header-row .header-cell {
+}
+
+.page-container.entry .alert {
+  margin-top: 10px;
+}
+
+.header-btns-container {
+  margin-top: 20px ;
+}
+
+.summary-row .summary-cell.with-link {
+  text-decoration: underline ;
+}
+
+.with-link span:hover {
+  cursor: pointer ;
+}
+
+.summary-row .identifier {
+  font-weight: bold ;
+}
+
+.show-more-btn-container {
+  margin-top: 20px ;
+}
+
+.show-more-btn {
+  float: right ;
+  margin-right: 20px ;
+}
+
+.summary.panel .panel-content {
+  padding-bottom: 15px;
+  
+}
+
+.summary-table-container {
+  max-height: 430px ;
+  overflow-y: auto;
+}
+
+.variant-table-container {
+  max-height: 800px ;
+  overflow-y: auto;
+}
+
+.summary-table-container .table, .variant-table-container .table {
+  height: 100% ;
+}
+
+.showing-records-num {
+  float: right ;
+  font-weight: bold ;
+  padding-right: 15px ;
+  padding-top: 5px;
+}
+
+.show-more-variants-btn-container {
+  margin-top: 10px ;
+}
+
+.show-more-variants-btn {
+  float: right ;
+  margin-right: 20px ;
+}
+
+.showing-variant-records-num {
+  float: right ;
+  font-weight: bold ;
+  padding-right: 15px ;
+  padding-top: 5px;
+}
+
+.variant-table-container-panel {
+  padding-bottom: 20px;
+}
+
+.variant-cell .assertion {
+  margin-bottom: 15px;
+}
+
+.variant-cell .tags {
+  margin-left: 5px;  
+}
+
+.badge.e-link {
+  margin-right: 4px;
+}
+
+.calc-link {
+  padding-left: 3px ;
+  font-size: 20px ;
+}
+
+.recent-activity .heading {
+  margin-top: 3px;
+  margin-bottom: 10px ;
+  padding-left: 5px ;
+}
+
+.allele.row {
+  margin-bottom: 25px;
+}
+
+.allele.row .tag {
+  margin: 3px;
+}
+
+.recent-activity .activity {
+  width: 75% ;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.label.assertion {
+  font-size: 13px ;
+}
+
+.example-text {
+  margin-top: 10px ;
+}
+
+.no-variants.panel {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

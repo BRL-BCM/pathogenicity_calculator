@@ -1,0 +1,69 @@
+<%
+  
+  headerFile = @genboreePCSettings.headerFilePath.to_s.strip
+  footerFile = @genboreePCSettings.footerFilePath.to_s.strip
+%>
+<!DOCTYPE html>
+<html lang="<%= current_language %>">
+<head>
+  <meta charset="utf-8" />
+  <title><%=h html_title %></title>
+  
+  <meta name="description" content="<%= Redmine::Info.app_name %>" />
+  <meta name="keywords" content="issue,bug,tracker" />
+  <%# Have Redmine add its authorization token meta tags (and favicon meta tag) %>
+  <%= csrf_meta_tag %>
+  <%= favicon %>
+
+  <%= javascript_include_tag 'jquery-1.12.min.js', :plugin => 'genboree_generic' %>
+  <%= javascript_include_tag 'jquery-ujs-2.0.3.js', :plugin => 'genboree_generic' %>
+  <%= javascript_include_tag 'bootstrap-fa-extensive-noMedia.min.js', :plugin => 'genboree_generic' %>
+  <%= javascript_include_tag 'bootstrap-slider-altSnapTo.js', :plugin => 'genboree_generic' %>
+  <%= javascript_include_tag 'bootstrap-select.min.js', :plugin => 'genboree_generic' %>
+  <%= javascript_include_tag 'validator.js', :plugin => 'genboree_generic' %>
+  <%= javascript_include_tag 'helpers.js', :plugin => 'genboree_generic' %>
+  <%= javascript_include_tag 'jquery-bootstrap-modal-steps.min.js', :plugin => 'genboree_generic' %>
+  <%= javascript_include_tag 'application.js' %>
+  <%= javascript_include_tag 'common.js', :plugin => 'genboree_patho_calc' %>
+  <%= javascript_include_tag 'entry.js', :plugin => 'genboree_patho_calc' %>
+  <%= stylesheet_link_tag 'font-awesome.css', :plugin => 'genboree_generic', :media => 'all' %>
+  <%= stylesheet_link_tag 'bootstrap-fa-extensive-noMedia.min.css', :plugin => 'genboree_generic', :media => 'all' %>
+  <%= stylesheet_link_tag 'bootstrap-slider.css', :plugin => 'genboree_generic', :media => 'all' %>
+  <%= stylesheet_link_tag 'bootstrap-select.min.css', :plugin => 'genboree_generic', :media => 'all' %>
+  <%= stylesheet_link_tag 'bootstrap-grid-cell-height-fix.css', :plugin => 'genboree_generic', :media => 'all' %>
+  <%= stylesheet_link_tag 'font-awesome.custom.css', :plugin => 'genboree_generic', :media => 'all' %>
+  <%= stylesheet_link_tag 'common.css', :plugin => 'genboree_patho_calc', :media => 'all' %>
+  <%= stylesheet_link_tag 'entry.css', :plugin => 'genboree_patho_calc', :media => 'all' %>
+  
+  <%# Arrange for any <head> content from the specific View (i.e. via this: content_for :header_tags) %>
+  <%= yield :header_tags -%>
+
+</head>
+<body>
+  <%# Insert static header file, if available %>
+  <% if(File.exist?(headerFile)) %>
+    <%= File.read(headerFile).html_safe %>
+  <% end %>
+
+  <%# This will be in body %>
+  <%# * div#content wraps all View html %>
+  <div id="content">
+    <%# Arrange to render and insert output of the specific View (whatever that is at the time) %>
+    <%= yield %>
+    <%= call_hook :view_layouts_base_content %>
+    <%# Cleanly end the page with an HTML "blank" line %>
+    <div style="clear:both;"></div>
+  </div>
+  
+  <%# Insert static footer file, if available %>
+  <% if(File.exist?(footerFile)) %>
+    <%= File.read(footerFile).html_safe %>
+  <% end %>
+  <div id="spinningModal" class="modal fade " data-label="" data-body=""  tabindex="-1" role="dialog">
+    <div id="spinnerContainer" class="loading spinner-container">
+      
+    </div>
+  </div>
+  <%= yield :body_end %>
+</body>
+</html>

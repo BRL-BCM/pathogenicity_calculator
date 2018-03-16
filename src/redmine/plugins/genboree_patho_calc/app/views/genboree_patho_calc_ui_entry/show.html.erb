@@ -1,0 +1,178 @@
+<%
+  variantPanelHeaders = [
+    "Variants",
+    "Gene",
+    "Description",
+    "Assertion(s)/Tags",
+    "Quick Links"
+  ]
+  #@docCount = 0
+%>
+<%
+  if(@errMsg != "")
+%>
+  <div class="error-container">
+    <h3>
+      <%=@errMsg%>
+    </h3>
+  </div>
+<%
+  else
+    $stderr.puts "@assertions: #{@assertions.inspect}"
+    kbMount = RedmineApp::Application.routes.default_scope[:path].to_s
+    projectId = @projectId
+%>
+  <script type="text/javascript">
+    var docCount = <%==@docCount%> ;
+    var assertions = JSON.parse('<%== @assertions.to_json %>') ;
+    var geneSummaryURI = '<%==@geneSummaryColl%>' ;
+    var evidenceSourceURI = '<%==@evSourceUrl%>' ;
+    var evidenceCollURI = '<%==@evidenceCollURI%>' ;
+    var kbMount = '<%==kbMount%>' ;
+    var projectId = '<%==projectId%>' ;
+    var showLimit = <%==@showLimit%> ;
+    var variantShowLimit = <%==@variantShowLimit%> ;
+    var variantSkip = <%==@variantSkip%> ;
+    var skip = <%==@skip%> ;
+    var regAddress = '<%==@settingsRec.alleleRegAddress%>' ;
+    var appPath = kbMount+"/projects/"+projectId+"/genboree_patho_calc" ;
+    // @todo this needs to come from the Summary Categories collection
+    var summCategory = 'genes' ;
+    var showingSummaryRecs = 0 ;
+    var currentCellVariantCount = 0 ;
+    var currentAssetion = "" ;
+    var showingVariantRecs = 0 ;
+    var summaryIdentifier ;
+    $(document).ready(function() {
+      initEntryPage();
+    }) ;
+  </script>
+  <div class="page-container entry">
+    <!--<div class="row page-title">
+      <div class="col-sm-12 text-center">
+        <h1>
+          <i class="fa fa-calculator"></i>ClinGen Pathogenicity Calculator
+        </h1>
+      </div>
+    </div>-->
+    
+    <div class="alert alert-warning alert-dismissable fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">x</span></button>
+      This page does not currently support multiple guidelines and may not work properly in case you have more than one guideline in your configuration. 
+    </div>
+    
+    <div class="well custom-well header-btns-container">
+      <div class="row">
+        <div class="col-sm-4 text-center">
+          <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#variantSearchInRegistryModal">Start new interpretation</button>
+        </div>
+        <div class="col-sm-4 text-center">
+          <button type="button"  class="btn btn-primary disabled variant-search-in-coll" data-toggle="modal" data-target="#variantSearchInCollModal">Search variant in your collection</button>
+        </div>
+        <div class="col-sm-4 text-center">
+          <button type="button" data-toggle="tooltip" title="Coming soon!" class="btn btn-primary disabled download-data" >Download data</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="summary-grid-container recent-activity-container row hide">
+      <div class=" col-xs-12 col-sm-8 col-md-8">
+        <div class="panel panel-primary summary">
+          <div class="panel-heading">
+            Summary of interpreted variants
+          </div>
+          <div class="panel-content table-responsive">
+            <div class="summary-table-container">
+              <table class="table table-condensed grid-table">
+                <tr class="header-row">
+                  <th></th>
+                  <%
+                    @assertions.each { |asser|
+                  %>
+                    <th class="header-cell forvtext">
+                      <div class="rotate-me"><%==@assertions2Label[asser]%></div>
+                    </th>
+                  <%
+                    }
+                  %>
+                </tr>
+                
+              </table>
+            </div>
+            <%
+              if(@docCount > @showLimit)
+            %>
+              <div class="show-more-btn-container">
+                <button class="btn btn-info show-more-btn" type="button" onclick="showMore()">Show More</button>
+                <span class="showing-records-num"></span>
+              </div>
+            <%
+              end
+            %>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <div class="panel panel-primary recent-activity hide">
+          <div class="panel-heading">
+            Recent Activity
+          </div>
+          <div class="panel-content ">
+            <div class="heading">
+              Recently interpreted variants
+            </div>
+            <div class="activity">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="variant-listing-container row hide">
+      <div class=" col-xs-12 col-sm-12 col-md-12">
+        <div class="panel panel-primary variant">
+          <div class="panel-heading">
+            Variants Listing
+          </div>
+          <div class="panel-content table-responsive variant-table-container-panel">
+            <div class="variant-table-container">
+              <table class="table table-condensed grid-table">
+                <tr class="header-row">
+                  <%
+                    variantPanelHeaders.each { |header|
+                  %>
+                    <th class="header-cell"><%==header%></th>
+                  <%
+                    }
+                  %>
+                </tr>
+              </table>
+            </div>
+            <div class="show-more-variants-btn-container">
+              <button class="btn btn-info show-more-variants-btn " type="button" onclick="showMoreVariants()">Show More</button>
+              <span class="showing-variant-records-num"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="no-variants-container hide">
+      <div class="no-variants panel panel-info">
+        There are no variants in your collection. Please click the 'Start new interpretation' button to start working with a variant.
+      </div>
+    </div>
+    
+    
+  </div>
+  
+<%
+  end
+%>
+
+<%= render(:partial => "genboree_patho_calc_ui_entry/variant_search_in_registry") %>
+<%= render(:partial => "genboree_patho_calc_ui_entry/variant_search_in_coll") %>
+<%= render(:partial => "genboree_patho_calc_ui_entry/variant_not_found") %>
+<%= render(:partial => "genboree_patho_calc_ui_entry/register_variant") %>
+<%= render(:partial => "genboree_patho_calc_ui_entry/post_variant_registration") %>

@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="<%= current_language %>">
+<head>
+  <meta charset="utf-8" />
+  <%# Have Redmine add its authorization token meta tags (and favicon meta tag) %>
+  <%= csrf_meta_tag %>
+  <%= favicon %>
+  <%= stylesheet_link_tag 'alleleRpt.css', :plugin => 'genboree_patho_calc', :media => 'all' %>
+</head>
+<body>
+  <%# Arrange to render and insert output of the specific View (whatever that is at the time) %>
+  <%= yield %>
+  <%= call_hook :view_layouts_base_content %>
+  <%# Cleanly end the page with an HTML "blank" line %>
+  <div style="clear:both;"></div>
+  <%= yield :body_end %>
+</body>
+</html>

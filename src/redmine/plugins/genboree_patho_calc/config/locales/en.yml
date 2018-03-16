@@ -1,0 +1,15 @@
+# English strings go here for Rails i18n
+en:
+  # my_label: "My label"
+  gbpathocalc_label_project_settings_tab: "Pathogenicity Calculator"
+  gbpathocalc_label_edit_settings: "Pathogenicity Calculator Settings"
+  alleleRegAddress: "Allele Registry Address"
+  userConfHost: "User Configuration Host"
+  userConfRsrcPath: "User Configuration Resource Path"
+  headerFilePath: "Header File Path"
+  footerFilePath: "Footer File Path"
+  alleleRptDownloadEnabled: "Allele Report Download Enabled ?"
+  alleleRptModelFile: "Allele Report Model File"
+  alleleRptTemplatesDir: "Allele Report Templates Directory"
+  alleleRptAssetBaseDir: "Allele Report Asset Base Directory"
+  urlMount: "URL Mount"

@@ -1,0 +1,39 @@
+<%
+  @settingsFields, @settingsRec = GenboreePathoCalcHelper.find_settings(@project)
+  $stderr.puts "DEBUG +++++ @project => #{@project.inspect} ; @settingsFields:\n\n#{@settingsFields.inspect}\n\n    @settingsRec:\n\n#{@settingsRec.inspect}\n\n" 
+  @settingsFields ||= []
+  @settingsRec ||= nil
+%>
+<%# Set project-specific settings for this module %>
+  <h3><%= l(:gbpathocalc_label_edit_settings) %></h3>
+  <%= form_tag("#{RedmineApp::Application.routes.default_scope[:path]}/projects/#{@project.identifier}/settings/genboree_patho_calc/update") do %>
+    <table style="padding-top:20px;padding-left:20px;">
+      <% @settingsFields.each { |field| %>
+        <tr>
+          <td><b><%= label_tag field.to_s, l(field) %></b></td>
+          <% if @settingsRec.nil? %>
+            <% if(field.to_s == "alleleRptDownloadEnabled") %>
+              <td>
+                <%= check_box field.to_s, 'val', { :checked => false }, checked_value = "1", unchecked_value = "0"   %>
+                <!--<%= check_box_tag "useRedmineLayout"  %>-->
+              </td>
+            <% else %>
+              <td><%= text_field_tag field.to_s, "", {:size => 60 } %></td>
+            <% end %>
+          <% else %>
+            <% if(field.to_s == "alleleRptDownloadEnabled") %>
+              <td>
+                <% $stderr.puts "path calc: @settingsRec.send(field): #{@settingsRec.send(field)}" %>
+                <%= check_box field.to_s, 'val', { :checked => @settingsRec.send(field) }, checked_value = "1", unchecked_value = "0"   %>
+                <!--<%= check_box_tag "useRedmineLayout"  %>-->
+              </td>
+            <% else %>
+              <td><%= text_field_tag field.to_s, @settingsRec.send(field), {:size => 60 } %></td>
+            <% end %>
+          <% end %>
+        </tr>
+      <% } %>
+    </table>
+    <%= submit_tag "Update" %>
+  <% end %>
+

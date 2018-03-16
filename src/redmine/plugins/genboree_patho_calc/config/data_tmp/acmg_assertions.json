@@ -1,0 +1,10 @@
+{
+  "Uncertain Significance - Conflicting Evidence": "VUS-Conflicting",
+  "Likely Benign": "Likely-Benign",
+  "Likely Pathogenic": "Likely Pathogenic",
+  "Benign": "Benign",
+  "Benign - Stand Alone": "Benign-BA1",
+  "Uncertain Significance - Insufficient Evidence": "VUS-Insufficient",
+  "Pathogenic": "Pathogenic",
+  "Undetermined": "Undetermined"
+}

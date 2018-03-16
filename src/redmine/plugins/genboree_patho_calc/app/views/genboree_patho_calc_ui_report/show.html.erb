@@ -1,0 +1,29 @@
+
+
+<%
+  rptContent = ""
+  if(@doc)
+    begin
+      kbDoc = BRL::Genboree::KB::KbDoc.new(@doc)
+      tp = BRL::Genboree::KB::Producers::AbstractTemplateProducer.new(@rptModel, kbDoc, { :templateDir => Rails.root.join("plugins", "genboree_patho_calc", "templates"), :relaxedRootValidation => true })
+      rptContent = tp.render(:alleleRpt)
+    rescue => err
+      if(err.is_a?(ArgumentError))
+        rptContent = "Cannot display doc. #{err.message}"
+      else
+        rptContent = "Error during report generation, likely a report-rendering bug. Please consult an administrator or project manager with help tracking down the cause."
+      end
+      $stderr.debugPuts(__FILE__, __method__, "ERROR", "\n  Error class: #{err.class}\n  Error msg: #{err.message}\nError trace:\n#{err.backtrace.join("\n")}")
+    end
+  else
+    rptContent = "Cannot display doc. The payload received from the Clingen Pathogenicity Calculator appears to be missing the required data. Please consult an administrator or project manager with help tracking down and addressing the cause."
+  end
+%>
+  
+<!-- PAGE -->
+<div id="page">
+  <!-- CONTENT -->
+  <%==rptContent%>
+</div>
+
+

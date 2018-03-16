@@ -1,84 +1,83 @@
 {
-  "domain": "string",
+  "identifier": true,
   "required": true,
+  "description": "Identifier for this document",
+  "index": true,
   "properties": [
     {
-      "domain": "string",
+      "description": "Email to be displayed in case of warning or error messages",
       "name": "Email",
-      "description": "Email to be displayed in case of warning or error messages"
+      "domain": "string"
     },
     {
-      "domain": "url",
-      "required": false,
+      "description": "Link to canonical allele collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}",
       "properties": [
         {
-          "domain": "url",
           "required": true,
+          "description": "GenboreeKB UI link",
           "name": "redmineProject",
-          "description": "GenboreeKB UI link"
+          "domain": "url"
         }
       ],
       "name": "CanonicalAllele",
-      "description": "Link to canonical allele collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}"
+      "domain": "url"
     },
     {
-      "domain": "url",
       "required": true,
+      "description": "Link to evidence source collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}. Information about guidelines, tags, transformation and project IDs are fetched from this collection",
       "name": "EvidenceSource",
-      "description": "Link to evidence source collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}. Information about guidelines, tags, transformation and project IDs are fetched from this collection"
+      "domain": "url"
     },
     {
-      "domain": "url",
       "required": true,
+      "description": "Link to conclusionCache collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}.",
       "name": "ConclusionCache",
-      "description": "Link to conclusionCache collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}."
+      "domain": "url"
     },
     {
-      "domain": "url",
       "required": true,
+      "description": "Link to the EvidenceCache",
       "name": "CA2EvidenceCache",
-      "description": "Link to the EvidenceCache"
+      "domain": "url"
     },
     {
-      "domain": "url",
-      "required": false,
+      "description": "Link to Gene collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}.",
       "name": "Gene",
-      "description": "Link to Gene collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}."
+      "domain": "url"
     },
     {
-      "domain": "url",
-      "required": false,
+      "description": "Link to ReferenceSequence collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}.",
       "name": "ReferenceSequence",
-      "description": "Link to ReferenceSequence collection - Example http://genboree.org/REST/v1/grp/{grp}/kb/{kb}/coll/{coll}."
+      "domain": "url"
     },
     {
-      "domain": "url",
-      "required": false,
+      "description": "Link to the collection where the source links for the canonical allele are present. It is this information that is used in the top most panel of the calculator.",
       "name": "CASourceLinks",
-      "description": "Link to the collection where the source links for the canonical allele are present. It is this information that is used in the top most panel of the calculator."
+      "domain": "url"
     },
     {
-      "domain": "url",
-      "required": false,
+      "description": "Link to the collection where the source links for the gene are present. It is this information that is used in the top most panel of the calculator.",
       "name": "GeneSourceLinks",
-      "description": "Link to the collection where the source links for the gene are present. It is this information that is used in the top most panel of the calculator."
+      "domain": "url"
     },
     {
-      "domain": "url",
-      "required": false,
+      "description": "Link to the Contextual Collection.",
       "name": "ContextualAllele",
-      "description": "Link to the Contextual Collection."
+      "domain": "url"
     },
     {
-      "domain": "url",
-      "required": false,
+      "description": "Link to the Registry Address.",
       "name": "RegistryAddress",
-      "description": "Link to the Registry Address."
+      "domain": "url"
+    },
+    {
+      "description": "URL to the gene summary collection: one of the summarization categories",
+      "index": true,
+      "name": "GeneSummary",
+      "domain": "url"
     }
   ],
   "unique": true,
-  "identifier": true,
-  "index": true,
   "name": "Configuration",
-  "description": "Identifier for this document"
+  "domain": "string"
 }

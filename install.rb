@@ -1,7 +1,17 @@
 #!/usr/bin/env ruby
 
-require 'genboreeTools'
 
+if ARGV.size != 1
+	puts "Parameters: Allele Registry FQDN (without http:// prefix)"
+	exit 1
+end
+
+alleleRegistryFQDN = ARGV[0]
+
+# copy dedicated files to correct locations
+`./install_app.sh` 
+
+require 'genboreeTools'
 
 group_pcalc_resources = 'pcalc_resources'
 group_pcalc_public_cache = 'pcalc_cache'
@@ -42,5 +52,7 @@ api_put("/REST/v1/grp/#{group_pcalc_resources}/kb/#{kb_pcalc_resources}/coll/All
 api_put("/REST/v1/grp/#{group_pcalc_resources}/kb/#{kb_pcalc_resources}/coll/GuidelineRulesMetaRules/doc/ACMG2015-Guidelines", File.read("kb_data/ACMG2015-Guidelines.json"))
 api_put("/REST/v1/grp/#{group_pcalc_resources}/kb/#{kb_pcalc_resources}/trRulesDoc/acmgTransform"                            , File.read("kb_others/acmgTransform.json"))
 
-# copy dedicated files to correct locations
-`./install_app.sh` 
+# create Redmine project
+redmine_add_project("pathogenicity_calculator", "Pathogenicity Calculator", ['genboree_patho_calc'], true)
+redmine_configure_project_genboree_patho_calc("pathogenicity_calculator", alleleRegistryFQDN)
+

@@ -1,0 +1,186 @@
+
+<%
+  if(@errMsg != "")
+%>
+  <div class="error-container">
+    <h3>
+      <%=@errMsg%>
+    </h3>
+  </div>
+<%
+  else
+%>
+  <%
+    kbMount = RedmineApp::Application.routes.default_scope[:path].to_s
+    projectId = @projectId
+    $stderr.puts "params[show]: #{params.inspect}"
+    hgvs = params.key?('hgvs') ? params['hgvs'].strip() : nil
+    ca =  params.key?('ca') ? params['ca'].strip() : nil
+    showgrids = params.key?('showgrids') ? params['showgrids'].strip() : nil
+    register = params.key?('register') ? true : false
+    version = 'V2.6'
+    isPublic = false
+    transfertoJs = ""
+    transfertoJs << "var regAddress = '#{CGI.escape(@genboreePCSettings.alleleRegAddress.strip())}';" 
+    transfertoJs << "var evSourceUrl = '#{CGI.escape(@evSourceUrl.strip())}';" 
+    transfertoJs << "var conCacheUrl = '#{CGI.escape(@conCacheUrl.strip())}';" 
+    transfertoJs << "var evCacheUrl = '#{CGI.escape(@evCacheUrl.strip())}';" 
+    transfertoJs << "var ca = '#{CGI.escape(ca.strip())}';" if(ca)
+    transfertoJs << "var hgVS = '#{CGI.escape(hgvs.strip())}';" if(hgvs)
+    transfertoJs << "var user = '#{@currRmUser.login}';"
+    transfertoJs << "var showgrids = '#{showgrids}';" if(showgrids)
+    transfertoJs << "var alleleRptDownloadEnabled = '#{@genboreePCSettings.alleleRptDownloadEnabled}';" 
+    transfertoJs << "var registerAllele = '#{register}';" if(register)
+    transfertoJs << "var version = '#{version}';" if(version)
+  %>
+ 
+  <div class="row">
+    <div class="col-sm-8 col-xs-12 ">
+      <div class="pageTitle">
+        ClinGen Pathogenicity Calculator
+      </div>
+    </div>
+    <%
+      if(isPublic)
+    %>
+      <div class="gb-logout-butt btn gb-logout-butt" onclick="javascript:showPublicWindow(); ">
+        Public
+      </div>
+    <%
+      else
+    %>
+      <div class="col-sm-4 col-xs-12 ">
+        <div class="gb-logout-butt btn btn-primary" onclick="javascript:callLogout();">Logout</div>
+      </div>
+   <%
+    end
+   %>
+  </div>
+  <div class="col-sm-4 col-xs-12 ">
+    <div class="gb-dashboard-butt btn btn-primary" onclick="javascript:goToDashboardPage()">Dashboard</div>
+  </div>
+  <div class="container" id="panel">
+    
+  </div>
+  <script type="text/javascript" >
+    // tags a global variable. freshly populated before each tab contents 
+    // are activated. Require correct tags to add and save tabs from an edot window.
+    var kbMount = '<%==kbMount%>' ;
+    var projectId = '<%==projectId%>' ;
+    var appPath = kbMount+"/projects/"+projectId+"/genboree_patho_calc" ;
+    var alleleRptDownloadEnabled ;
+    var version ;
+    // @todo this should be read from settings
+    var urlMount = '<%==@genboreePCSettings.urlMount%>' ;
+    var geneSummaryURI = '<%==@geneSummaryColl%>' ;
+    var nonCodingVariantText = '<%==@nonCodingVariantText%>' ;
+    var tags = new Object() ;
+    var tagExclusions = new Object() ;
+    var alltagsinTable = new Object()
+    var tagDefs = new Object() ;
+    var tagExclusionsOfInterest = new Object() ;
+    var regResp ;
+    // color object for storing the colors of the cell. Used for highlighting 
+    var parColor = new Object() ;
+    var user;
+    var uniquegrpUris = new Object();
+    // canonical allele for the calculator page
+    var ca ;
+    var caalleletype ;
+    // canonical allele subject
+    var caSub;
+    // show grids variable for filtering the grids from a URL
+    var showgrids ;
+    var topPanelInfo = new Object() ;
+    var geneInfo = new Object() ;
+    // canonical allele object for the entry page
+    var caAlleles = new Object() ;
+    // global for storing source reg docs
+    var sourceRegistry = [] ;
+    var evidences = [] ;
+    var eviDoc ;
+    var conf ;
+    // stores the individual tab/grid parameters
+    var grids = new Object() ;
+    // stores the gridnames
+    var gridNames = [] ;
+    var gridNamesMap = new Object() ;
+    // stores info about multiplied grids
+    var isPublic ;
+    var safeStr = new Object() ;
+    // used for entrypage
+    var makesaGridForEntryGrid ;
+    var alleleSorted = [] ;
+    // to get list of canonical alleles based on hgvs term, shows the entry page grid populated with the 
+    // query results
+    var hgVS;
+    var reg ;
+    var registerAllele ;
+    var subjectsData = new Object() ;
+    var conditionSearchStoreData = null ;
+    //First get the session default variables
+   <%== transfertoJs %>
+    Ext.onReady(function(){
+      // Set up tooltip singleton.
+      Ext.tip.QuickTipManager.init();
+      //Ext.Ajax.cors = true ;
+      //Ext.Ajax.useDefaultXhrHeader = false;
+      //Ext.Ajax.disableCaching = false;
+      delete Ext.tip.Tip.prototype.minWidth;
+      Ext.tip.Tip.prototype.minWidth = 200;
+      window.addEventListener('resize', function(event){
+        if (Ext.getCmp('gvGrid')) {
+          Ext.getCmp('gvGrid').doLayout() ;
+        }
+      });
+      window.addEventListener('resize', function(event){
+        if (Ext.getCmp('fullcalc')) {
+          Ext.getCmp('fullcalc').doLayout() ;
+        }
+      });
+       window.addEventListener('resize', function(event){
+          if (Ext.getCmp('tagAndLinks')) {
+            Ext.getCmp('tagAndLinks').doLayout() ;
+          }
+        });
+      // go to the calculator page
+      if(ca){
+        getSourceRegistry(true) ;
+      }
+      // show the newly registered allele in the grid
+      // If not display error
+      else if(hgVS && registerAllele) {
+        reg = JSON.parse(unescape(regResp)) ;
+        if('@id' in reg) {
+          caAlleles[reg['@id']] = {} ; 
+          caAlleles[reg['@id']].CA =  reg['@id'].split("/").pop() ;
+          if(Ext.getCmp('gvGrid')) {Ext.getCmp('gvGrid').destroy() ;}
+          var hgvsStore = getHgvsStore() ; 
+          alleleSorted = [reg['@id']] ;
+          var store = getEntryStore() ;
+          store.load() ;
+          makeEntryGrid(store) ;
+        }
+        else 
+        {
+          var mess = "Failed to register allele using HGVS expression:<b> "+hgVS+ "</b><br>";
+          if('message' in reg) {mess += '<br> <i>See the details below:</i><br>' + reg.message + '<br><br>';}
+          Ext.Msg.alert('ERROR_ALLELE_REGISTRATION', mess) ;
+          console.log('Error in ALLELE REGISTRATION '+hgVS) ;
+          console.log(reg) ;
+          alleleSorted = [] ;
+          var store = getEntryStore() ;
+          makeEntryGrid(store) ;
+        }
+      }
+      // display the default page with all the alleles in the user evidence source
+      else {
+        makeTemplate() ;
+      }
+    });
+
+  </script>
+<%
+  end
+%>
+

@@ -111,7 +111,6 @@ class GenboreePathoCalcAlleleRegistryController < ApplicationController
     @status = nil
     apiReq.respCallback { |array|
       begin
-        $stderr.debugPuts(__FILE__, __method__, "DEBUG", "resp array: #{array.inspect}")
         @headers = array[1]
         @status = array[0]
         @headers['Content-Type'] = "text/plain"
